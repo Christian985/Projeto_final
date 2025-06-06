@@ -4,9 +4,10 @@
 }
 
 header {
-    background-color: red;
+    background-color: #000000;
     height: 65px;
     text-align: center;
+    color: red;
 }
 
 nav {
