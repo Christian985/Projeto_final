@@ -12,6 +12,7 @@ header{
 nav{
     width: 150px;
     height: 91vh;
-    background-color: red;
+    background-color: #000000;
     text-align: left;
+    color: red;
 }
