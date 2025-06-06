@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     background-color: red;
     height: 65px;
     text-align: center;
 }
 
-nav{
+nav {
     width: 150px;
     height: 91vh;
     background-color: #000000;
