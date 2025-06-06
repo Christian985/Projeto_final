@@ -9,3 +9,9 @@ header{
     text-align: center;
 }
 
+nav{
+    width: 150px;
+    height: 91vh;
+    background-color: red;
+    text-align: left;
+}
