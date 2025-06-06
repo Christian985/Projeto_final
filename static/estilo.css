@@ -4,16 +4,24 @@
 }
 
 header {
-    background-color: #000000;
+    background-color: #2c2c2c;
     height: 65px;
     text-align: center;
-    color: red;
+    font-size: 22px;
+    color: white;
+    border: white;
 }
 
 nav {
-    width: 150px;
+    width: 190px;
     height: 91vh;
-    background-color: #000000;
+    background-color: #2c2c2c;
     text-align: left;
     color: red;
+    font-size: 25px;
+}
+
+.separacao {
+    padding-top: 20px;
+
 }
