@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inicio.html" afterDir="false" />
     </list>
-    <list id="d215cfc1-9311-44cc-8149-5aec10bb41c1" name="Changes by senai_24-25" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_calcados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inicio.html" afterDir="false" />
-    </list>
+    <list id="d215cfc1-9311-44cc-8149-5aec10bb41c1" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -41,19 +38,6 @@
     &quot;accountId&quot;: &quot;acf93378-34c9-4419-b373-18eb8ba97ea5&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/templates/inicio.html">
-      <ranges>
-        <range start1="14" end1="15" start2="14" end2="15" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="18" end1="19" start2="18" end2="19" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="22" end1="23" start2="22" end2="23" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="26" end1="27" start2="26" end2="27" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="30" end1="31" start2="30" end2="31" changelist="d215cfc1-9311-44cc-8149-5aec10bb41c1" />
-        <range start1="34" end1="35" start2="34" end2="35" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="38" end1="39" start2="38" end2="39" changelist="d215cfc1-9311-44cc-8149-5aec10bb41c1" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -113,7 +97,7 @@
       <workItem from="1749219305207" duration="1317000" />
       <workItem from="1749230749555" duration="2239000" />
       <workItem from="1749724763628" duration="69000" />
-      <workItem from="1756400458165" duration="5343000" />
+      <workItem from="1756400458165" duration="7011000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -235,13 +219,30 @@
       <option name="project" value="LOCAL" />
       <updated>1756406102285</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Changes by senai_24-25">
+      <option name="closed" value="true" />
+      <created>1756406847946</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1756406847946</updated>
+    </task>
+    <task id="LOCAL-00017" summary="commit">
+      <option name="closed" value="true" />
+      <created>1756407237688</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1756407237688</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes by senai_24-25" />
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
