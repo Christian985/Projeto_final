@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def inicial():
-    return render_template('inicio.html')
+    return render_template('template.html')
 
 
 @app.route('/cadastro_cliente')

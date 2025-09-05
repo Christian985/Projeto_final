@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inicio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_calcados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_clientes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_pedidos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_pedidos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lista_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_calcados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lista_clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_clientes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pedidos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pedidos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +106,7 @@
       <workItem from="1756984280794" duration="107000" />
       <workItem from="1757080984951" duration="2671000" />
       <workItem from="1757087965143" duration="74000" />
-      <workItem from="1757093257959" duration="2067000" />
+      <workItem from="1757093257959" duration="2969000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -254,7 +260,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757088016170</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="commit">
+      <option name="closed" value="true" />
+      <created>1757095873155</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1757095873155</updated>
+    </task>
+    <task id="LOCAL-00021" summary="commit">
+      <option name="closed" value="true" />
+      <created>1757095928162</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1757095928162</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
