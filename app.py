@@ -4,37 +4,37 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def inicial():
+def inicio():
     return render_template('template.html')
 
 
 @app.route('/cadastro_cliente')
-def exemplos():
+def cadastro_de_cliente():
     return render_template('cadastro_cliente.html')
 
 
 @app.route('/cadastro_calcados')
-def exercicios():
+def cadastro_de_calcados():
     return render_template('cadastro_calcados.html')
 
 
 @app.route('/cadastro_pedidos')
-def exercicios():
+def cadastro_de_pedidos():
     return render_template('cadastro_pedidos.html')
 
 
 @app.route('/lista_calcados')
-def exercicios():
+def lista_de_calcados():
     return render_template('lista_calcados.html')
 
 
 @app.route('/lista_pedidos')
-def exercicios():
+def lista_de_pedidos():
     return render_template('lista_pedidos.html')
 
 
 @app.route('/pedidos')
-def exercicios():
+def pedidos():
     return render_template('pedidos.html')
 
 
