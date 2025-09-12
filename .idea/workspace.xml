@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/static/user.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
-    </list>
-    <list id="3024dc5d-5bfb-4f12-ac8e-7496db383029" name="Changes by senai_24-25" comment="">
       <change beforePath="$PROJECT_DIR$/static/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
     </list>
-    <list id="51826c46-48c7-43c0-9a93-366577c271d6" name="Changes by senai_24_25" comment="" />
+    <list id="3024dc5d-5bfb-4f12-ac8e-7496db383029" name="Changes by senai_24-25" comment="Changes by senai_24-25">
+      <change beforePath="$PROJECT_DIR$/static/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilo.css" afterDir="false" />
+    </list>
+    <list id="51826c46-48c7-43c0-9a93-366577c271d6" name="Changes by senai_24_25" comment="">
+      <change beforePath="$PROJECT_DIR$/static/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilo.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,14 +57,21 @@
   }
 }</component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/templates/template.html">
+    <file path="$PROJECT_DIR$/static/estilo.css">
       <ranges>
-        <range start1="8" end1="9" start2="8" end2="8" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="11" end1="12" start2="10" end2="14" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="13" end1="14" start2="15" end2="17" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="43" end1="45" start2="46" end2="48" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="50" end1="50" start2="53" end2="54" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="52" end1="52" start2="56" end2="60" changelist="3024dc5d-5bfb-4f12-ac8e-7496db383029" />
+        <range start1="22" end1="22" start2="22" end2="23" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
+        <range start1="34" end1="35" start2="35" end2="36" changelist="3024dc5d-5bfb-4f12-ac8e-7496db383029" />
+        <range start1="43" end1="44" start2="44" end2="45" changelist="3024dc5d-5bfb-4f12-ac8e-7496db383029" />
+        <range start1="45" end1="46" start2="46" end2="47" changelist="3024dc5d-5bfb-4f12-ac8e-7496db383029" />
+        <range start1="52" end1="53" start2="53" end2="54" changelist="3024dc5d-5bfb-4f12-ac8e-7496db383029" />
+        <range start1="66" end1="67" start2="67" end2="68" changelist="51826c46-48c7-43c0-9a93-366577c271d6" />
+        <range start1="84" end1="85" start2="85" end2="86" changelist="51826c46-48c7-43c0-9a93-366577c271d6" />
+        <range start1="100" end1="101" start2="101" end2="102" changelist="3024dc5d-5bfb-4f12-ac8e-7496db383029" />
+        <range start1="109" end1="109" start2="110" end2="111" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
+        <range start1="113" end1="113" start2="115" end2="116" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
+        <range start1="117" end1="118" start2="120" end2="121" changelist="3024dc5d-5bfb-4f12-ac8e-7496db383029" />
+        <range start1="125" end1="126" start2="128" end2="129" changelist="3024dc5d-5bfb-4f12-ac8e-7496db383029" />
+        <range start1="127" end1="127" start2="130" end2="134" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
       </ranges>
     </file>
   </component>
@@ -79,6 +89,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.cadastro_calcados.html.executor": "Run",
+    "JavaScript Debug.hbbh.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.inicio.html.executor": "Run",
     "JavaScript Debug.login.html.executor": "Run",
@@ -137,7 +148,7 @@
       <workItem from="1757080984951" duration="2671000" />
       <workItem from="1757087965143" duration="74000" />
       <workItem from="1757093257959" duration="5685000" />
-      <workItem from="1757674936446" duration="13983000" />
+      <workItem from="1757674936446" duration="21315000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -371,7 +382,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757686983448</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="commit">
+      <option name="closed" value="true" />
+      <created>1757693867072</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1757693867072</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

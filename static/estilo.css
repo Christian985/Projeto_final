@@ -20,6 +20,7 @@ header {
   padding: 15px 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   text-align: center;
+  border: solid 2px white;
 }
 
 header h1 {
@@ -32,25 +33,26 @@ header h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #000000;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-color: white;
 }
 
 /* Logo ou título do menu */
 .menu-title {
   font-size: 20px;
   font-weight: bold;
-  color: #000;
+  color: #ffffff;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 /* Ícone ou usuário no canto  */
 .menu-icon {
   font-size: 24px;
   cursor: pointer;
-  color: #ffffff;
+  color: #000000;
 }
 
 /* Container principal com sidebar e conteúdo */
@@ -64,7 +66,7 @@ header h1 {
 /* Sidebar */
 .sidebar {
   width: 250px;
-  background-color: #222; /* Cor escura */
+  background-color: #000000; /* Cor escura */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -82,7 +84,7 @@ header h1 {
 }
 
 .sidebar a {
-  color: #ffffff; /* Cor do texto */
+  color: #ff0000; /* Cor do texto */
   text-decoration: none;
   display: block;
   padding: 10px 15px;
@@ -98,7 +100,7 @@ header h1 {
 .main-content {
   flex: 1;
   padding: 20px;
-  background-color: #ddd; /* Cor de fundo do conteúdo */
+  background-color: #ffffff; /* Cor de fundo do conteúdo */
   overflow-y: auto;
 }
 
@@ -107,15 +109,17 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+
 }
 
 nav li {
   margin-bottom: 10px;
+
 }
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
   padding: 10px 20px;
   display: block;
   border-radius: 4px;
@@ -123,5 +127,9 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #eee;
+  background-color: #020202;
+}
+
+nav{
+    font-size: 50px;
 }
