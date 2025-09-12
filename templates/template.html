@@ -6,12 +6,15 @@
     <title>Organização da Gestão de Pedidos</title>
     <link rel="stylesheet" href="/static/estilo.css">
 </head>
-
 <body>
 <header>
-    <h1>Menu</h1>
+    <div class="menu-top">
+        <div class="menu-title">Menu</div>
+        <div class="menu-icon">👤</div>
+    </div>
 </header>
-    <nav>
+<div class="container">
+    <aside class="sidebar">
         <ul>
             <li>
                 <div class="separacao"><a href="{{ url_for('template') }}">Menu</a></div>
@@ -41,12 +44,16 @@
                 <div class="separacao"><a href="{{ url_for('cadastro_calcados') }}">Cadastro de calçados</a></div>
             </li>
         </ul>
-    </nav>
-<main>
+        </aside>
+<main class="main-content">
         {% block conteudo %}
 
         {% endblock %}
 
 </main>
+</div>
 </body>
 </html>
+
+
+
