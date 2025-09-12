@@ -1,0 +1,112 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #111;
+  font-family: Arial, sans-serif;
+}
+
+
+form {
+  background-color: #222;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+
+form::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: -60px auto 20px auto;
+
+}
+
+
+.icon {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: -60px auto 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #111;
+}
+
+
+label {
+  align-self: flex-start;
+  margin-bottom: 8px;
+  color: #ccc;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background-color: #444;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+
+.esqueceu {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #ccc;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.esqueceu:hover {
+  color: #fff;
+}
