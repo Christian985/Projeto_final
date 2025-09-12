@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/static/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="3024dc5d-5bfb-4f12-ac8e-7496db383029" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
     <list id="e517387d-7154-4c61-96c5-3e944be7c906" name="Changes by senai_24_25" comment="" />
@@ -122,7 +122,7 @@
       <workItem from="1757080984951" duration="2671000" />
       <workItem from="1757087965143" duration="74000" />
       <workItem from="1757093257959" duration="5685000" />
-      <workItem from="1757674936446" duration="22974000" />
+      <workItem from="1757674936446" duration="24200000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -380,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757703185587</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="commit">
+      <option name="closed" value="true" />
+      <created>1757703656011</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1757703656011</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
