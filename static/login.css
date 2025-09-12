@@ -39,7 +39,7 @@ form:before {
   width: 80px;
   height: 80px;
   background-color: #fff;
-  border-radius: 50%;
+  border-radius: 10%;
   margin: -60px auto 20px auto;
   display: flex;
   justify-content: center;

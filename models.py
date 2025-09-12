@@ -47,7 +47,7 @@ class Produtos(Base):
 
 # Dados da Lista
 class Cadastro_clientes(Base):
-    __tablename__ = 'Produtos'
+    __tablename__ = 'Cadastro_de_clientes'
     id = Column(Integer, primary_key=True)
     nome = Column(String(100), nullable=False, index=True)
     email = Column(String(100), nullable=False, index=True)
@@ -82,7 +82,7 @@ class Cadastro_clientes(Base):
 
 # Dados da Lista
 class Cadastro_pedidos(Base):
-    __tablename__ = 'Produtos'
+    __tablename__ = 'Cadastro_de_produtos'
     id = Column(Integer, primary_key=True)
     cliente_id = Column(Integer, ForeignKey('Produtos.id'))
 
