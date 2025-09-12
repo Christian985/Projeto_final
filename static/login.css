@@ -23,7 +23,7 @@ form {
 }
 
 
-form::before {
+form:before {
   content: "";
   display: block;
   width: 80px;

@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Column, Integer, String
+from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
 from sqlalchemy.orm import scoped_session, sessionmaker, declarative_base
 
 engine = create_engine('sqlite:///produtos.sqlite3')
@@ -74,7 +74,39 @@ class Cadastro_clientes(Base):
     def serialize(self):
         dados_user = {
             'nome': self.nome,
-            'categoria': self.categoria,
+            'email': self.email,
+            'cpf': self.cpf,
+        }
+        return dados_user
+
+
+# Dados da Lista
+class Cadastro_pedidos(Base):
+    __tablename__ = 'Produtos'
+    id = Column(Integer, primary_key=True)
+    cliente_id = Column(Integer, ForeignKey('Produtos.id'))
+
+    # Representação de Classe
+    def __repr__(self):
+        return '<User: {} {} >'.format(self.id,
+                                          self.cliente_id,
+                                          )
+
+    # Função para Salvar no Banco
+    def save(self):
+        db_session.add(self)
+        db_session.commit()
+
+    # Função para Deletar no Banco
+    def delete(self):
+        db_session.delete(self)
+        db_session.commit()
+
+    # Coloca os Dados na Tabela
+    def serialize(self):
+        dados_user = {
+            'id': self.id,
+            'cliente_id': self.cliente_id,
         }
         return dados_user
 

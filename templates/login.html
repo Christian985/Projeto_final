@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<link rel="stylesheet" href="/static/login.css">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Login</title>
+    <link rel="stylesheet" href="/static/login.css" />
 </head>
 <body>
 <form action="submit" method="POST">
+    <div class="icon"></div>    <!--coloque uma imagem aqui leo -->
     <label for="email">E-mail</label>
-    <input type="email" name="email" id="email">
+    <input type="email" id="email" name="email" placeholder="Digite o email" required>
 
     <label for="senha">Senha</label>
-    <input type="password" name="senha" id="senha">
+    <input type="password" id="senha" name="senha" placeholder="Digite a senha" required>
 
-    <label for="login">Login</label>
-    <botton
+    <button type="submit">Logar</button>
+
+    <div class="esqueceu">
+        Esqueceu sua senha?
+    </div>
 </form>
 </body>
 </html>

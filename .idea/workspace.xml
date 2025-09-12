@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
     </list>
-    <list id="b613876a-c40e-4cb8-b73e-6f85a953eb9e" name="Changes by Aluno" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-    </list>
+    <list id="b613876a-c40e-4cb8-b73e-6f85a953eb9e" name="Changes by Aluno" comment="" />
     <list id="a4e2d82e-a7ee-4f64-ab69-7125a1a7416a" name="Changes by senai_24-25" comment="">
+      <change beforePath="$PROJECT_DIR$/static/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,14 +41,6 @@
     &quot;accountId&quot;: &quot;acf93378-34c9-4419-b373-18eb8ba97ea5&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/templates/login.html">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="3" changelist="a4e2d82e-a7ee-4f64-ab69-7125a1a7416a" />
-        <range start1="13" end1="13" start2="14" end2="17" changelist="b613876a-c40e-4cb8-b73e-6f85a953eb9e" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -120,7 +110,7 @@
       <workItem from="1757080984951" duration="2671000" />
       <workItem from="1757087965143" duration="74000" />
       <workItem from="1757093257959" duration="5685000" />
-      <workItem from="1757674936446" duration="5653000" />
+      <workItem from="1757674936446" duration="5970000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -306,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757097511836</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="commit">
+      <option name="closed" value="true" />
+      <created>1757682222816</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1757682222816</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
