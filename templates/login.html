@@ -5,6 +5,14 @@
     <title>Login</title>
     <link rel="stylesheet" href="/static/login.css" />
 </head>
+<style>
+        body {
+        background-image: url('/static/download.png'); /* Substitua pelo caminho correto da imagem */
+        background-size: cover; /* Para a imagem cobrir toda a área */
+        background-repeat: no-repeat; /* Para a imagem não se repetir */
+        background-position: center; /* Para centralizar a imagem */
+        }
+</style>
 <body>
 <form action="submit" method="POST">
     <div class="icon">👤</div>    <!--coloque uma imagem aqui leo -->
@@ -14,7 +22,7 @@
     <label for="senha">Senha</label>
     <input type="password" id="senha" name="senha" placeholder="Digite a senha" required>
 
-    <button type="submit"><link href="template.html">Logar</button>
+    <button type="submit"><a href="template.html">Logar</a></button>
 
     <div class="esqueceu">
         Esqueceu sua senha?
