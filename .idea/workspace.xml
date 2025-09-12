@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/static/download.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
     </list>
-    <list id="797606b9-c393-4b38-bbd9-7946a1f8f84f" name="Changes by Aluno" comment="">
-      <change beforePath="$PROJECT_DIR$/static/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/login.css" afterDir="false" />
+    <list id="797606b9-c393-4b38-bbd9-7946a1f8f84f" name="Changes by Aluno" comment="Changes by Aluno" />
+    <list id="a4e2d82e-a7ee-4f64-ab69-7125a1a7416a" name="Changes by senai_24-25" comment="Changes by senai_24-25">
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
     </list>
-    <list id="a4e2d82e-a7ee-4f64-ab69-7125a1a7416a" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
     <list id="1e997c93-8fc2-4165-8d68-98f9099f54f0" name="Changes by senai_24_25" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +42,14 @@
     &quot;accountId&quot;: &quot;acf93378-34c9-4419-b373-18eb8ba97ea5&quot;
   }
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/templates/login.html">
+      <ranges>
+        <range start1="9" end1="13" start2="9" end2="12" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
+        <range start1="17" end1="18" start2="16" end2="17" changelist="a4e2d82e-a7ee-4f64-ab69-7125a1a7416a" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -117,7 +122,7 @@
       <workItem from="1757080984951" duration="2671000" />
       <workItem from="1757087965143" duration="74000" />
       <workItem from="1757093257959" duration="5685000" />
-      <workItem from="1757674936446" duration="10099000" />
+      <workItem from="1757674936446" duration="10412000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -335,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757684947427</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Changes by Aluno">
+      <option name="closed" value="true" />
+      <created>1757686702140</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1757686702140</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +357,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes by senai_24-25" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="Changes by Aluno" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by Aluno" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Projeto_final$models.coverage" NAME="models Coverage Results" MODIFIED="1757683563473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
