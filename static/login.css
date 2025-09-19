@@ -28,7 +28,7 @@ form:before {
   display: block;
   width: 80px;
   height: 80px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 50%;
   margin: -60px auto 20px auto;
 
@@ -52,7 +52,7 @@ form:before {
 label {
   align-self: flex-start;
   margin-bottom: 8px;
-  color: #ccc;
+  color: #303030;
   font-weight: bold;
   font-size: 14px;
 }

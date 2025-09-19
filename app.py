@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, request
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
@@ -37,6 +37,19 @@ def lista_de_pedidos():
 def pedidos():
     return render_template('pedidos.html')
 
+@app.route('/submit', methods=['POST'])
+def login():
+    email = request.form['email']
+    senha = request.form['senha']
+    tipo = request.form['tipo']
+
+    # Aqui você faria a verificação com banco de dados
+    if tipo == 'admin' and email == 'admin@site.com' and senha == 'admin123':
+        return redirect('/admin-dashboard')
+    elif tipo == 'usuario' and email == 'usuario@site.com' and senha == 'usuario123':
+        return redirect('/usuario-dashboard')
+    else:
+        return "Credenciais inválidas", 401
 
 if __name__ == '__main__':
     app.run(debug=True)

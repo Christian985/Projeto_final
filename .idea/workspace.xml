@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilo.css" afterDir="false" />
+    <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit" />
+    <list id="4b07e38f-c348-4bb6-af12-9f6ad1bfbe71" name="Changes by Aluno" comment="">
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
-    <list id="3024dc5d-5bfb-4f12-ac8e-7496db383029" name="Changes by senai_24-25" comment="Changes by senai_24-25">
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_calcados.html" afterDir="false" />
+    <list id="5a24509a-73d7-4137-9f2f-734454d3a74e" name="Changes by senai_24-25" comment="">
+      <change beforePath="$PROJECT_DIR$/static/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +127,7 @@
       <workItem from="1757674936446" duration="24200000" />
       <workItem from="1758193982688" duration="604000" />
       <workItem from="1758211732960" duration="948000" />
-      <workItem from="1758278203089" duration="5436000" />
+      <workItem from="1758278203089" duration="6220000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -417,7 +417,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758282389391</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Changes by senai_24-25">
+      <option name="closed" value="true" />
+      <created>1758284643709</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1758284643709</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

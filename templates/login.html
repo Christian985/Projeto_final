@@ -4,28 +4,43 @@
     <meta charset="UTF-8" />
     <title>Login</title>
     <link rel="stylesheet" href="/static/login.css" />
-</head>
-<style>
+    <style>
         body {
-        background-image: url('/static/download.png');
-        background-size: cover;
-        background-position: center;
+            background-image: url('/static/download.png');
+            background-size: cover;
+            background-position: center;
         }
-</style>
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 100px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
 <body>
-<form action="submit" method="POST">
-    <div class="icon">👤</div>
-    <label for="email">E-mail</label>
-    <input type="email" id="email" name="email" placeholder="Digite o email" required>
 
-    <label for="senha">Senha</label>
-    <input type="password" id="senha" name="senha" placeholder="Digite a senha" required>
+    <form class="form-container" action="/submit" method="POST">
+        <div class="icon" style="text-align:center; font-size: 40px;">👤</div>
 
-    <button type="submit"><a href="template.html">Logar</a></button>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite o email" required>
 
-    <div class="esqueceu">
-        Esqueceu sua senha?
-    </div>
-</form>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite a senha" required>
+
+        <label for="tipo">Tipo de usuário</label>
+        <select id="tipo" name="tipo" required>
+            <option value="usuario">Usuário</option>
+            <option value="admin">Administrador</option>
+        </select>
+
+        <button type="submit"><a href="template.html">Logar</button>
+
+        <div class="esqueceu">Esqueceu sua senha?</div>
+    </form>
+
 </body>
 </html>
