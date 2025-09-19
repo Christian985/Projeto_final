@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/static/thumbnail_1600w-removebg-preview.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
     </list>
-    <list id="3024dc5d-5bfb-4f12-ac8e-7496db383029" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
+    <list id="3024dc5d-5bfb-4f12-ac8e-7496db383029" name="Changes by senai_24-25" comment="Changes by senai_24-25">
+      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
+    </list>
     <list id="e517387d-7154-4c61-96c5-3e944be7c906" name="Changes by senai_24_25" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +54,14 @@
     &quot;accountId&quot;: &quot;acf93378-34c9-4419-b373-18eb8ba97ea5&quot;
   }
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/templates/template.html">
+      <ranges>
+        <range start1="11" end1="12" start2="11" end2="12" changelist="3024dc5d-5bfb-4f12-ac8e-7496db383029" />
+        <range start1="48" end1="48" start2="48" end2="50" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -123,6 +136,9 @@
       <workItem from="1757087965143" duration="74000" />
       <workItem from="1757093257959" duration="5685000" />
       <workItem from="1757674936446" duration="24200000" />
+      <workItem from="1758193982688" duration="604000" />
+      <workItem from="1758211732960" duration="948000" />
+      <workItem from="1758278203089" duration="2368000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />

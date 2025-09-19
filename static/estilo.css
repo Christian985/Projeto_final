@@ -16,11 +16,17 @@ body {
 
 /* Cabeçalho */
 header {
-  background-color: #000000;
+  background-color: #292828;
   padding: 15px 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   text-align: center;
   border: solid 1px white;
+}
+
+.intro{
+    background-color: black;
+    color:white;
+    text-align: center;
 }
 
 header h1 {
@@ -33,10 +39,9 @@ header h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000;
+  background-color: #292828;
   padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-color: white;
+  border-color: white;
 }
 
 /* Logo ou título do menu */
@@ -45,7 +50,7 @@ header h1 {
   font-weight: bold;
   color: #ffffff;
   align-items: center;
-  background-color: #000000;
+  background-color: #292828;
 }
 
 /* Ícone ou usuário no canto  */
@@ -66,7 +71,7 @@ header h1 {
 /* Sidebar */
 .sidebar {
   width: 250px;
-  background-color: #000000; /* Cor escura */
+  background-color: #292828; /* Cor escura */
   padding: 20px;
   display: flex;
   flex-direction: column;
