@@ -1,4 +1,58 @@
-{% extends 'template.html' %}
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organização da Gestão de Pedidos</title>
+    <link rel="stylesheet" href="/static/estilo.css">
+</head>
+<body>
+<header>
+    <div class="menu-top">
+        <div class="menu-title"><img src="/static/thumbnail_1600w-removebg-preview.png" alt="" height="60"></div>
+        <div class="menu-icon"><img src="/static/user.png" alt="" height="50"></div>
+    </div>
+</header>
+<div class="container">
+    <aside class="sidebar">
+        <ul>
+            <li>
+                <div class="separacao"><a href="/templates/template.html"><strong>Menu</strong></a></div>
+            </li>
 
+            <li>
+                <div class="separacao"><a href="/templates/lista_clientes.html"><strong>Lista Clientes</strong></a></div>
+            </li>
 
-{% endblock %}
+            <li>
+                <div class="separacao"><a href="/templates/lista_calcados.html"><strong>Lista Calçados</strong></a></div>
+            </li>
+
+            <li>
+                <div class="separacao"><a href="/templates/pedidos.html"><strong>Pedidos</strong></a></div>
+            </li>
+
+            <li>
+                <div class="separacao"><a href="/templates/cadastro_pedidos.html"><strong>Cadastro de Pedidos</strong></a></div>
+            </li>
+
+            <li>
+                <div class="separacao"><a href="/templates/cadastro_clientes.html"><strong>Cadastro de Clientes</strong></a></div>
+            </li>
+
+            <li>
+                <div class="separacao"><a href="/templates/cadastro_calcados.html"><strong>Cadastro de calçados</strong></a></div>
+            </li>
+        </ul>
+        </aside>
+<main class="main-content">
+    <div class="intro" ><p>SEJAM BEM VINDOS A INDUSTRY GEAR P</p></div>
+    <br>
+        {% block conteudo %}
+
+        {% endblock %}
+
+</main>
+</div>
+</body>
+</html>

@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/static/thumbnail_1600w-removebg-preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
     </list>
-    <list id="3024dc5d-5bfb-4f12-ac8e-7496db383029" name="Changes by senai_24-25" comment="Changes by senai_24-25">
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
+    <list id="930299d1-ccd7-4627-b434-5a6a78c3ff8b" name="Changes by Aluno" comment="">
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_calcados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_clientes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_pedidos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_pedidos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lista_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_calcados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lista_clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_clientes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pedidos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pedidos.html" afterDir="false" />
     </list>
+    <list id="3024dc5d-5bfb-4f12-ac8e-7496db383029" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
     <list id="e517387d-7154-4c61-96c5-3e944be7c906" name="Changes by senai_24_25" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -54,14 +57,6 @@
     &quot;accountId&quot;: &quot;acf93378-34c9-4419-b373-18eb8ba97ea5&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/templates/template.html">
-      <ranges>
-        <range start1="11" end1="12" start2="11" end2="12" changelist="3024dc5d-5bfb-4f12-ac8e-7496db383029" />
-        <range start1="48" end1="48" start2="48" end2="50" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -138,7 +133,7 @@
       <workItem from="1757674936446" duration="24200000" />
       <workItem from="1758193982688" duration="604000" />
       <workItem from="1758211732960" duration="948000" />
-      <workItem from="1758278203089" duration="2368000" />
+      <workItem from="1758278203089" duration="3885000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -404,7 +399,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757703656011</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="commit">
+      <option name="closed" value="true" />
+      <created>1758280746607</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1758280746607</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
