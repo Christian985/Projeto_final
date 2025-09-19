@@ -9,7 +9,7 @@
 <body>
 <header>
     <div class="menu-top">
-        <div class="menu-title"><img src="/static/thumbnail_1600w-removebg-preview.png" alt="" height="60"></div>
+        <img src="/static/thumbnail_1600w-removebg-preview.png" alt="" height="60"> MENU
         <div class="menu-icon"><img src="/static/user.png" alt="" height="50"></div>
     </div>
 </header>
@@ -17,40 +17,37 @@
     <aside class="sidebar">
         <ul>
             <li>
-                <div class="separacao"><a href="/templates/template.html"><strong>Menu</strong></a></div>
+                <div class="separacao"><a href="{{ url_for('template') }}"><strong>Menu</strong></a></div>
             </li>
 
             <li>
-                <div class="separacao"><a href="/templates/lista_clientes.html"><strong>Lista Clientes</strong></a></div>
+                <div class="separacao"><a href="{{ url_for('lista_clientes') }}"><strong>Lista Clientes</strong></a></div>
             </li>
 
             <li>
-                <div class="separacao"><a href="/templates/lista_calcados.html"><strong>Lista Calçados</strong></a></div>
+                <div class="separacao"><a href="{{ url_for('lista_calcados') }}"><strong>Lista Calçados</strong></a></div>
             </li>
 
             <li>
-                <div class="separacao"><a href="/templates/pedidos.html"><strong>Pedidos</strong></a></div>
+                <div class="separacao"><a href="{{ url_for('pedidos') }}"><strong>Pedidos</strong></a></div>
             </li>
 
             <li>
-                <div class="separacao"><a href="/templates/cadastro_pedidos.html"><strong>Cadastro de Pedidos</strong></a></div>
+                <div class="separacao"><a href="{{ url_for('cadastro_pedidos') }}"><strong>Cadastro de Pedidos</strong></a></div>
             </li>
 
             <li>
-                <div class="separacao"><a href="/templates/cadastro_clientes.html"><strong>Cadastro de Clientes</strong></a></div>
+                <div class="separacao"><a href="{{ url_for('cadastro_clientes') }}"><strong>Cadastro de Clientes</strong></a></div>
             </li>
 
             <li>
-                <div class="separacao"><a href="/templates/cadastro_calcados.html"><strong>Cadastro de calçados</strong></a></div>
+                <div class="separacao"><a href="{{ url_for('cadastro_calcados') }}"><strong>Cadastro de calçados</strong></a></div>
             </li>
         </ul>
         </aside>
 <main class="main-content">
     <div class="intro" ><p>SEJAM BEM VINDOS A INDUSTRY GEAR P</p></div>
     <br>
-        {% block conteudo %}
-
-        {% endblock %}
 
 </main>
 </div>

@@ -15,10 +15,12 @@ body {
 
 /* Cabeçalho */
 header {
-  background-color: #292828;
-  padding: 15px 20px;
-  text-align: center;
-  border: solid 1px white;
+    background-color: #292828;
+    padding: 15px 20px;
+    text-align: center;
+    border: solid 1px white;
+    color: white;
+    font-size: 40px;
 }
 
 .intro{
@@ -44,14 +46,6 @@ header h1 {
   border-color: white;
 }
 
-/* Logo ou título do menu */
-.menu-title {
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff;
-  align-items: center;
-  background-color: #292828;
-}
 
 /* Ícone ou usuário no canto  */
 .menu-icon {

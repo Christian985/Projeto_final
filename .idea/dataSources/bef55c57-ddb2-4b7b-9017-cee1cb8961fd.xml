@@ -499,7 +499,7 @@
     </routine>
     <schema id="191" parent="1" name="main">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2025-08-28.18:07:12</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-09-19.17:59:44</LastIntrospectionLocalTimestamp>
     </schema>
     <argument id="192" parent="16">
       <ArgumentDirection>R</ArgumentDirection>
@@ -1590,52 +1590,312 @@
     <argument id="554" parent="190">
       <Position>1</Position>
     </argument>
-    <table id="555" parent="191" name="Produtos"/>
-    <table id="556" parent="191" name="sqlite_master">
+    <table id="555" parent="191" name="Cadastro_de_clientes"/>
+    <table id="556" parent="191" name="Cadastro_de_produtos"/>
+    <table id="557" parent="191" name="Produtos"/>
+    <table id="558" parent="191" name="clientes"/>
+    <table id="559" parent="191" name="doacoes"/>
+    <table id="560" parent="191" name="pedido_itens"/>
+    <table id="561" parent="191" name="pedidos"/>
+    <table id="562" parent="191" name="reservas"/>
+    <table id="563" parent="191" name="reviews"/>
+    <table id="564" parent="191" name="sqlite_master">
       <System>1</System>
     </table>
-    <column id="557" parent="555" name="id">
+    <column id="565" parent="555" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>INTEGER|0s</StoredType>
     </column>
-    <column id="558" parent="555" name="nome">
+    <column id="566" parent="555" name="nome">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>VARCHAR(100)|0s</StoredType>
     </column>
-    <column id="559" parent="555" name="categoria">
+    <column id="567" parent="555" name="email">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>VARCHAR(100)|0s</StoredType>
     </column>
-    <index id="560" parent="555" name="ix_Produtos_nome">
+    <column id="568" parent="555" name="cpf">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>VARCHAR(100)|0s</StoredType>
+    </column>
+    <index id="569" parent="555" name="ix_Cadastro_de_clientes_nome">
       <ColNames>nome</ColNames>
     </index>
-    <index id="561" parent="555" name="ix_Produtos_categoria">
-      <ColNames>categoria</ColNames>
+    <index id="570" parent="555" name="ix_Cadastro_de_clientes_email">
+      <ColNames>email</ColNames>
     </index>
-    <key id="562" parent="555">
+    <index id="571" parent="555" name="ix_Cadastro_de_clientes_cpf">
+      <ColNames>cpf</ColNames>
+    </index>
+    <key id="572" parent="555">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="563" parent="556" name="type">
+    <column id="573" parent="556" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="574" parent="556" name="cliente_id">
+      <Position>2</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <foreign-key id="575" parent="556">
+      <ColNames>cliente_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>Produtos</RefTableName>
+    </foreign-key>
+    <key id="576" parent="556">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="577" parent="557" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="578" parent="557" name="nome">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>VARCHAR(100)|0s</StoredType>
+    </column>
+    <column id="579" parent="557" name="categoria">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>VARCHAR(100)|0s</StoredType>
+    </column>
+    <index id="580" parent="557" name="ix_Produtos_nome">
+      <ColNames>nome</ColNames>
+    </index>
+    <index id="581" parent="557" name="ix_Produtos_categoria">
+      <ColNames>categoria</ColNames>
+    </index>
+    <key id="582" parent="557">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="583" parent="558" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="584" parent="558" name="nome">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>VARCHAR(150)|0s</StoredType>
+    </column>
+    <column id="585" parent="558" name="email">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>VARCHAR(120)|0s</StoredType>
+    </column>
+    <column id="586" parent="558" name="cpf">
+      <Position>4</Position>
+      <StoredType>VARCHAR(20)|0s</StoredType>
+    </column>
+    <column id="587" parent="558" name="perfil">
+      <Position>5</Position>
+      <StoredType>VARCHAR(100)|0s</StoredType>
+    </column>
+    <key id="588" parent="558">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="589" parent="559" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="590" parent="559" name="nome">
+      <Position>2</Position>
+      <StoredType>VARCHAR(120)|0s</StoredType>
+    </column>
+    <column id="591" parent="559" name="email">
+      <Position>3</Position>
+      <StoredType>VARCHAR(120)|0s</StoredType>
+    </column>
+    <column id="592" parent="559" name="valor">
+      <Position>4</Position>
+      <StoredType>FLOAT|0s</StoredType>
+    </column>
+    <column id="593" parent="559" name="mensagem">
+      <Position>5</Position>
+      <StoredType>TEXT|0s</StoredType>
+    </column>
+    <column id="594" parent="559" name="criado_em">
+      <Position>6</Position>
+      <StoredType>DATETIME|0s</StoredType>
+    </column>
+    <key id="595" parent="559">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="596" parent="560" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="597" parent="560" name="pedido_id">
+      <Position>2</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="598" parent="560" name="produto_id">
+      <Position>3</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="599" parent="560" name="quantidade">
+      <Position>4</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="600" parent="560" name="preco_unitario">
+      <Position>5</Position>
+      <StoredType>FLOAT|0s</StoredType>
+    </column>
+    <foreign-key id="601" parent="560">
+      <ColNames>pedido_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>pedidos</RefTableName>
+    </foreign-key>
+    <foreign-key id="602" parent="560">
+      <ColNames>produto_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>Produtos</RefTableName>
+    </foreign-key>
+    <key id="603" parent="560">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="604" parent="561" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="605" parent="561" name="cliente_id">
+      <Position>2</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="606" parent="561" name="data_criacao">
+      <Position>3</Position>
+      <StoredType>DATETIME|0s</StoredType>
+    </column>
+    <column id="607" parent="561" name="data_entrega">
+      <Position>4</Position>
+      <StoredType>VARCHAR(50)|0s</StoredType>
+    </column>
+    <column id="608" parent="561" name="status">
+      <Position>5</Position>
+      <StoredType>VARCHAR(50)|0s</StoredType>
+    </column>
+    <column id="609" parent="561" name="total">
+      <Position>6</Position>
+      <StoredType>FLOAT|0s</StoredType>
+    </column>
+    <column id="610" parent="561" name="origem">
+      <Position>7</Position>
+      <StoredType>VARCHAR(150)|0s</StoredType>
+    </column>
+    <column id="611" parent="561" name="horario_abertura">
+      <Position>8</Position>
+      <StoredType>VARCHAR(50)|0s</StoredType>
+    </column>
+    <foreign-key id="612" parent="561">
+      <ColNames>cliente_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>clientes</RefTableName>
+    </foreign-key>
+    <key id="613" parent="561">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="614" parent="562" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="615" parent="562" name="produto_id">
+      <Position>2</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="616" parent="562" name="cliente_nome">
+      <Position>3</Position>
+      <StoredType>VARCHAR(120)|0s</StoredType>
+    </column>
+    <column id="617" parent="562" name="quantidade">
+      <Position>4</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="618" parent="562" name="data_reserva">
+      <Position>5</Position>
+      <StoredType>VARCHAR(50)|0s</StoredType>
+    </column>
+    <column id="619" parent="562" name="criado_em">
+      <Position>6</Position>
+      <StoredType>DATETIME|0s</StoredType>
+    </column>
+    <foreign-key id="620" parent="562">
+      <ColNames>produto_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>Produtos</RefTableName>
+    </foreign-key>
+    <key id="621" parent="562">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="622" parent="563" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="623" parent="563" name="produto_id">
+      <Position>2</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="624" parent="563" name="autor">
+      <Position>3</Position>
+      <StoredType>VARCHAR(120)|0s</StoredType>
+    </column>
+    <column id="625" parent="563" name="comentario">
+      <Position>4</Position>
+      <StoredType>TEXT|0s</StoredType>
+    </column>
+    <column id="626" parent="563" name="estrelas">
+      <Position>5</Position>
+      <StoredType>INTEGER|0s</StoredType>
+    </column>
+    <column id="627" parent="563" name="criado_em">
+      <Position>6</Position>
+      <StoredType>DATETIME|0s</StoredType>
+    </column>
+    <foreign-key id="628" parent="563">
+      <ColNames>produto_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>Produtos</RefTableName>
+    </foreign-key>
+    <key id="629" parent="563">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="630" parent="564" name="type">
       <Position>1</Position>
       <StoredType>TEXT|0s</StoredType>
     </column>
-    <column id="564" parent="556" name="name">
+    <column id="631" parent="564" name="name">
       <Position>2</Position>
       <StoredType>TEXT|0s</StoredType>
     </column>
-    <column id="565" parent="556" name="tbl_name">
+    <column id="632" parent="564" name="tbl_name">
       <Position>3</Position>
       <StoredType>TEXT|0s</StoredType>
     </column>
-    <column id="566" parent="556" name="rootpage">
+    <column id="633" parent="564" name="rootpage">
       <Position>4</Position>
       <StoredType>INT|0s</StoredType>
     </column>
-    <column id="567" parent="556" name="sql">
+    <column id="634" parent="564" name="sql">
       <Position>5</Position>
       <StoredType>TEXT|0s</StoredType>
     </column>

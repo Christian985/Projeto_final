@@ -49,15 +49,13 @@ class Produtos(Base):
 class Cadastro_clientes(Base):
     __tablename__ = 'Cadastro_de_clientes'
     id = Column(Integer, primary_key=True)
-    nome = Column(String(100), nullable=False, index=True)
     email = Column(String(100), nullable=False, index=True)
-    cpf = Column(String(100), nullable=False, index=True)
+    senha = Column(String(100), nullable=False, index=True)
 
     # Representação de Classe
     def __repr__(self):
-        return '<User: {} {} {}>'.format(self.nome,
-                                          self.email,
-                                          self.cpf,
+        return '<User: {} {}>'.format(self.email,
+                                          self.senha,
                                           )
 
     # Função para Salvar no Banco
@@ -73,9 +71,8 @@ class Cadastro_clientes(Base):
     # Coloca os Dados na Tabela
     def serialize(self):
         dados_user = {
-            'nome': self.nome,
             'email': self.email,
-            'cpf': self.cpf,
+            'senha': self.senha,
         }
         return dados_user
 
@@ -107,6 +104,37 @@ class Cadastro_pedidos(Base):
         dados_user = {
             'id': self.id,
             'cliente_id': self.cliente_id,
+        }
+        return dados_user
+
+
+# Dados da Lista
+class Cadastro_usuario(Base):
+    __tablename__ = 'Cadastro_de_usuarios'
+    id = Column(Integer, primary_key=True)
+    email = Column(String(100), nullable=False, index=True)
+    senha = Column(String(100), nullable=False, index=True)
+
+    # Representação de Classe
+    def __repr__(self):
+        return '<User: {} {}>'.format(self.email,
+                                      self.senha,
+                                      )
+    # Função para Salvar no Banco
+    def save(self):
+        db_session.add(self)
+        db_session.commit()
+
+    # Função para Deletar no Banco
+    def delete(self):
+        db_session.delete(self)
+        db_session.commit()
+
+    # Coloca os Dados na Tabela
+    def serialize(self):
+        dados_user = {
+            'email': self.email,
+            'senha': self.senha,
         }
         return dados_user
 

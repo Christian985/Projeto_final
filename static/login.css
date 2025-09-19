@@ -5,13 +5,13 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #111;
+  background-color: #000000;
   font-family: Arial, sans-serif;
 }
 
 
 form {
-  background-color: #222;
+  background-color: #631919;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -52,7 +52,7 @@ form:before {
 label {
   align-self: flex-start;
   margin-bottom: 8px;
-  color: #303030;
+  color: #ffffff;
   font-weight: bold;
   font-size: 14px;
 }
@@ -65,8 +65,8 @@ input[type="password"] {
   margin-bottom: 20px;
   border: none;
   border-radius: 5px;
-  background-color: #333;
-  color: #fff;
+  background-color: #1b1b1b;
+  color: #0b0b0b;
   font-size: 14px;
   box-sizing: border-box;
   outline: none;
