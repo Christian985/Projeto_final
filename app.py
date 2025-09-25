@@ -4,38 +4,47 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def inicio():
+def template():
     return render_template('template.html')
 
 
 @app.route('/cadastro_cliente')
-def cadastro_de_cliente():
+def cadastro_cliente():
     return render_template('cadastro_cliente.html')
 
 
 @app.route('/cadastro_calcados')
-def cadastro_de_calcados():
+def cadastro_calcados():
     return render_template('cadastro_calcados.html')
 
 
 @app.route('/cadastro_pedidos')
-def cadastro_de_pedidos():
+def cadastro_pedidos():
     return render_template('cadastro_pedidos.html')
 
 
 @app.route('/lista_calcados')
-def lista_de_calcados():
+def lista_calcados():
     return render_template('lista_calcados.html')
 
 
 @app.route('/lista_pedidos')
-def lista_de_pedidos():
+def lista_pedidos():
     return render_template('lista_pedidos.html')
 
 
 @app.route('/pedidos')
 def pedidos():
     return render_template('pedidos.html')
+
+
+@app.route('/lista_clientes')
+def lista_clientes():
+    return render_template('lista_clientes.html')
+
+
+
+
 
 @app.route('/submit', methods=['POST'])
 def login():
