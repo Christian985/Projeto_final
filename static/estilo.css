@@ -12,7 +12,10 @@ body {
   flex-direction: column;
   height: 100vh;
 }
-
+.imagem_logo_menu{
+    margin-left: 40%;
+    margin-top: 10%;
+}
 /* Cabeçalho */
 header {
     background-color: #292828;
