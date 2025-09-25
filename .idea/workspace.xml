@@ -4,24 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_calcados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
-    </list>
-    <list id="3290dfd8-5dde-4133-b53f-4efaccf0de5c" name="Changes by Aluno" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
-    </list>
-    <list id="2674cfaa-6ca9-492e-94b5-a3fb84dd9e70" name="Changes by senai_24-25" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_calcados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_clientes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_pedidos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_pedidos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/lista_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_calcados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/lista_clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_clientes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pedidos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pedidos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
-    </list>
+    <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit" />
+    <list id="3290dfd8-5dde-4133-b53f-4efaccf0de5c" name="Changes by Aluno" comment="" />
     <list id="95e0eda1-d4b4-44d4-9e9c-67674ce52a29" name="Changes by senai_24_25" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,26 +47,6 @@
     &quot;accountId&quot;: &quot;acf93378-34c9-4419-b373-18eb8ba97ea5&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/templates/template.html">
-      <ranges>
-        <range start1="9" end1="10" start2="9" end2="10" changelist="3290dfd8-5dde-4133-b53f-4efaccf0de5c" />
-        <range start1="39" end1="40" start2="39" end2="40" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="58" end1="61" start2="58" end2="58" changelist="2674cfaa-6ca9-492e-94b5-a3fb84dd9e70" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/templates/cadastro_calcados.html">
-      <ranges>
-        <range start1="20" end1="21" start2="20" end2="21" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="24" end1="25" start2="24" end2="25" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="28" end1="29" start2="28" end2="29" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="32" end1="33" start2="32" end2="33" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="36" end1="37" start2="36" end2="37" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="40" end1="41" start2="40" end2="41" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
-        <range start1="44" end1="45" start2="44" end2="45" changelist="2674cfaa-6ca9-492e-94b5-a3fb84dd9e70" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -160,7 +124,7 @@
       <workItem from="1758193982688" duration="604000" />
       <workItem from="1758211732960" duration="948000" />
       <workItem from="1758278203089" duration="18964000" />
-      <workItem from="1758798352634" duration="3494000" />
+      <workItem from="1758798352634" duration="3880000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -482,7 +446,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758308644354</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="commit">
+      <option name="closed" value="true" />
+      <created>1758803497861</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1758803497861</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,6 +468,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Projeto_final$models.coverage" NAME="models Coverage Results" MODIFIED="1758304986903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projeto_final$app.coverage" NAME="app Coverage Results" MODIFIED="1758803185564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projeto_final$app.coverage" NAME="app Coverage Results" MODIFIED="1758803538861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
