@@ -10,7 +10,7 @@ def template():
 
 @app.route('/cadastro_cliente')
 def cadastro_cliente():
-    return render_template('cadastro_cliente.html')
+    return render_template('cadastro_clientes.html')
 
 
 @app.route('/cadastro_calcados')
