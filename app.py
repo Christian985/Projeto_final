@@ -43,9 +43,6 @@ def lista_clientes():
     return render_template('lista_clientes.html')
 
 
-
-
-
 @app.route('/submit', methods=['POST'])
 def login():
     email = request.form['email']
@@ -60,5 +57,6 @@ def login():
     else:
         return "Credenciais inválidas", 401
 
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5002, host="0.0.0.0")

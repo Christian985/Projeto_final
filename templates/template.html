@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/static/estilo.css">
 </head>
 <body>
-<header> 
+<header>
     <div class="menu-top">
         <img src="/static/thumbnail_1600w-removebg-preview.png" alt="" height="60"> MENU
         <div class="menu-icon"><img src="/static/user.png" alt="" height="50"></div>
@@ -21,11 +21,13 @@
             </li>
 
             <li>
-                <div class="separacao"><a href="{{ url_for('lista_clientes') }}"><strong>Lista Clientes</strong></a></div>
+                <div class="separacao"><a href="{{ url_for('lista_clientes') }}"><strong>Lista Clientes</strong></a>
+                </div>
             </li>
 
             <li>
-                <div class="separacao"><a href="{{ url_for('lista_calcados') }}"><strong>Lista Calçados</strong></a></div>
+                <div class="separacao"><a href="{{ url_for('lista_calcados') }}"><strong>Lista Calçados</strong></a>
+                </div>
             </li>
 
             <li>
@@ -33,27 +35,30 @@
             </li>
 
             <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_pedidos') }}"><strong>Cadastro de Pedidos</strong></a></div>
+                <div class="separacao"><a href="{{ url_for('cadastro_pedidos') }}"><strong>Cadastro de Pedidos</strong></a>
+                </div>
             </li>
 
             <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_cliente') }}"><strong>Cadastro de Clientes</strong></a></div>
+                <div class="separacao"><a href="{{ url_for('cadastro_cliente') }}"><strong>Cadastro de Clientes</strong></a>
+                </div>
             </li>
 
             <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_calcados') }}"><strong>Cadastro de calçados</strong></a></div>
+                <div class="separacao"><a href="{{ url_for('cadastro_calcados') }}"><strong>Cadastro de
+                    calçados</strong></a></div>
             </li>
         </ul>
-        </aside>
-<main class="main-content">
-    <div class="intro" ><p>SEJAM BEM VINDOS A INDUSTRY GEAR P</p></div>
-    <br>
-    <div class="imagem_logo_menu"><img src="/static/thumbnail_1600w-letras.png" alt="" height="500"></div>
-    {% block conteudo %}
+    </aside>
+    <main class="main-content">
+        <div class="intro"><p>SEJAM BEM VINDOS A INDUSTRY GEAR P</p></div>
+        <br>
+        <div class="imagem_logo_menu"><img src="/static/thumbnail_1600w-letras.png" alt="" height="500"></div>
+        {% block conteudo %}
 
-    {% endblock %}
+        {% endblock %}
 
-</main>
+    </main>
 </div>
 </body>
 </html>

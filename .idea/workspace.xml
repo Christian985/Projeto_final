@@ -5,13 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/static/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Projeto_final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Projeto_final.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/produtos.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_calcados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_clientes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_pedidos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_pedidos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/lista_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_calcados.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/lista_clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_clientes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pedidos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pedidos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
     </list>
-    <list id="b5ec9795-366a-41b2-adf9-b4a6b7bf0272" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
-    <list id="95e0eda1-d4b4-44d4-9e9c-67674ce52a29" name="Changes by senai_24_25" comment="" />
+    <list id="1320db10-ea92-4ca0-bbb9-68f09395a980" name="Changes by Aluno" comment="">
+      <change beforePath="$PROJECT_DIR$/templates/lista_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_calcados.html" afterDir="false" />
+    </list>
+    <list id="b5ec9795-366a-41b2-adf9-b4a6b7bf0272" name="Changes by senai_24-25" comment="Changes by senai_24-25">
+      <change beforePath="$PROJECT_DIR$/static/cadastro.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/cadastro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/lista_clientes.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/lista_clientes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/login.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -52,6 +67,14 @@
     &quot;accountId&quot;: &quot;acf93378-34c9-4419-b373-18eb8ba97ea5&quot;
   }
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/templates/lista_calcados.html">
+      <ranges>
+        <range start1="48" end1="49" start2="48" end2="48" changelist="67ce0dc7-618b-4e89-ad92-72145c47d4f4" />
+        <range start1="57" end1="58" start2="56" end2="57" changelist="1320db10-ea92-4ca0-bbb9-68f09395a980" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -61,35 +84,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.cadastro_calcados.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.hbbh.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.inicio.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.login.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.pedidos.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.template.html.executor&quot;: &quot;Run&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.models.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/senai_24_25/PycharmProjects/Projeto_final/static&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.black.configuration.BlackFormatterConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.cadastro_calcados.html.executor": "Run",
+    "JavaScript Debug.cadastro_clientes.html.executor": "Run",
+    "JavaScript Debug.hbbh.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.index2.html.executor": "Run",
+    "JavaScript Debug.inicio.html.executor": "Run",
+    "JavaScript Debug.lista_clientes.html.executor": "Run",
+    "JavaScript Debug.login.html.executor": "Run",
+    "JavaScript Debug.pedidos.html.executor": "Run",
+    "JavaScript Debug.template.html.executor": "Run",
+    "Python.app.executor": "Run",
+    "Python.models.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/senai_24_25/PycharmProjects/Projeto_final/static",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.intellij.python.templateLanguages.PyTemplateLanguageModulesConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\senai_24_25\PycharmProjects\Projeto_final\static" />
@@ -129,7 +155,15 @@
       <workItem from="1758193982688" duration="604000" />
       <workItem from="1758211732960" duration="948000" />
       <workItem from="1758278203089" duration="18964000" />
-      <workItem from="1758798352634" duration="6245000" />
+      <workItem from="1758798352634" duration="10418000" />
+      <workItem from="1758906745453" duration="231000" />
+      <workItem from="1759401786112" duration="1272000" />
+      <workItem from="1759403466145" duration="647000" />
+      <workItem from="1759404533394" duration="16856000" />
+      <workItem from="1759487736217" duration="13405000" />
+      <workItem from="1760007306543" duration="1200000" />
+      <workItem from="1760613084159" duration="10815000" />
+      <workItem from="1760698790301" duration="9543000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -491,7 +525,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758805395218</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="commit">
+      <option name="closed" value="true" />
+      <created>1758805979269</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1758805979269</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Changes by senai_24-25">
+      <option name="closed" value="true" />
+      <created>1758806172872</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1758806172873</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,12 +549,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes by Aluno" />
-    <MESSAGE value="Changes by senai_24-25" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="Changes by senai_24-25" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by senai_24-25" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Projeto_final$models.coverage" NAME="models Coverage Results" MODIFIED="1758304986903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projeto_final$app.coverage" NAME="app Coverage Results" MODIFIED="1758805488450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projeto_final$models.coverage" NAME="models Coverage Results" MODIFIED="1759411184791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projeto_final$app.coverage" NAME="app Coverage Results" MODIFIED="1760720709349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

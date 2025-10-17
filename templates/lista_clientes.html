@@ -44,15 +44,36 @@
                 <div class="separacao"><a href="{{ url_for('cadastro_calcados') }}"><strong>Cadastro de calçados</strong></a></div>
             </li>
         </ul>
-        </aside>
-<main class="main-content">
-    <div class="intro" ><p>SEJAM BEM VINDOS A INDUSTRY GEAR P</p></div>
-    <br>
-        {% block conteudo %}
-            <div class="card">t</div>
-        {% endblock %}
+    </aside>
 
-</main>
+    <main class="main-content">
+        <div class="intro"><p>SEJAM BEM VINDOS A INDUSTRY GEAR P</p></div>
+        <br>
+        <div id="cards-container"></div>
+    </main>
 </div>
+
+<script>
+    async function carregarClientes() {
+        try {
+            const resposta = await fetch("/api/clientes");
+            const clientes = await resposta.json();
+            const container = document.getElementById("cards-container");
+            container.innerHTML = "";
+
+            clientes.forEach(cliente => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+                card.innerText = cliente.nome;
+                container.appendChild(card);
+            });
+        } catch (error) {
+            console.error("Erro ao carregar clientes:", error);
+        }
+    }
+
+    carregarClientes();
+    setInterval(carregarClientes, 5000); // atualiza a cada 5s
+</script>
 </body>
 </html>

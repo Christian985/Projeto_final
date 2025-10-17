@@ -1,0 +1,100 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+  width: 90%;
+  text-align: center;
+  padding: 20px;
+  background-color: #292828;
+  border-radius: 10px;
+  border: 2px solid #ff0000;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #ff0000;
+  font-size: 36px;
+}
+
+/* Lista de pedidos */
+#listaPedidos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 900px;
+}
+
+/* Card */
+.pedido-card {
+  background-color: #1f1f1f;
+  border: 4px solid black;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  transition: transform 0.3s;
+  color: #fff;
+}
+
+.pedido-card:hover {
+  transform: scale(1.05);
+}
+
+/* Informações */
+.pedido-info {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Status */
+.pedido-status {
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Cores de status */
+.pedido-card[data-status="Parado"] {
+  border-color: #ff0000;
+  background-color: #330000;
+}
+.pedido-card[data-status="Em andamento"] {
+  border-color: #ffff00;
+  background-color: #444400;
+  color: #000;
+}
+.pedido-card[data-status="Feito"] {
+  border-color: #00ff00;
+  background-color: #004400;
+  color: #000;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  #listaPedidos {
+    grid-template-columns: 1fr;
+  }
+  .pedido-card {
+    width: 90%;
+  }
+}

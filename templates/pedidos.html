@@ -1,58 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Organização da Gestão de Pedidos</title>
-    <link rel="stylesheet" href="/static/estilo.css">
+  <meta charset="UTF-8">
+  <title>Gestão de Pedidos - Visualização</title>
+  <link rel="stylesheet" href="/static/pedidos.css">
 </head>
 <body>
-<header>
-    <div class="menu-top">
-        <div class="menu-title"><img src="/static/thumbnail_1600w-removebg-preview.png" alt="" height="60"></div>PEDIDOS
-        <div class="menu-icon"><img src="/static/user.png" alt="" height="50"></div>
-    </div>
-</header>
-<div class="container">
-    <aside class="sidebar">
-        <ul>
-            <li>
-                <div class="separacao"><a href="{{ url_for('template') }}"><strong>Menu</strong></a></div>
-            </li>
+  <header>
+    <h1>Gestão de Pedidos - Visualização</h1>
+  </header>
 
-            <li>
-                <div class="separacao"><a href="{{ url_for('lista_clientes') }}"><strong>Lista Clientes</strong></a></div>
-            </li>
+  <!-- Lista de pedidos -->
+  <section id="listaPedidos"></section>
 
-            <li>
-                <div class="separacao"><a href="{{ url_for('lista_calcados') }}"><strong>Lista Calçados</strong></a></div>
-            </li>
+  <script>
+    const apiURL = "http://127.0.0.1:5000/pedidos";
 
-            <li>
-                <div class="separacao"><a href="{{ url_for('pedidos') }}"><strong>Pedidos</strong></a></div>
-            </li>
+    // Função para carregar os pedidos da API
+    async function carregarPedidos() {
+      const res = await fetch(apiURL);
+      const pedidos = await res.json();
+      const container = document.getElementById("listaPedidos");
+      container.innerHTML = "";
 
-            <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_pedidos') }}"><strong>Cadastro de Pedidos</strong></a></div>
-            </li>
+      pedidos.forEach(p => {
+        const card = document.createElement("div");
+        card.className = "pedido-card";
+        card.dataset.status = p.status;
 
-            <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_cliente') }}"><strong>Cadastro de Clientes</strong></a></div>
-            </li>
+        const info = document.createElement("div");
+        info.className = "pedido-info";
+        info.textContent = `${p.cliente} - ${p.produto}`;
 
-            <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_calcados') }}"><strong>Cadastro de calçados</strong></a></div>
-            </li>
-        </ul>
-        </aside>
-<main class="main-content">
-    <div class="intro" ><p>SEJAM BEM VINDOS A INDUSTRY GEAR P</p></div>
-    <br>
-        {% block conteudo %}
-            <div class="card">t</div>
-        {% endblock %}
+        const status = document.createElement("div");
+        status.className = "pedido-status";
+        status.textContent = p.status;
 
-</main>
-</div>
+        card.appendChild(info);
+        card.appendChild(status);
+        container.appendChild(card);
+      });
+    }
+
+    carregarPedidos();
+  </script>
 </body>
 </html>
