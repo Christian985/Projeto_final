@@ -1,57 +1,53 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Organização da Gestão de Pedidos</title>
-    <link rel="stylesheet" href="/static/estilo.css">
-</head>
-<body>
-<header>
-    <div class="menu-top">
-        <div class="menu-title"><img src="/static/thumbnail_1600w-removebg-preview.png" alt="" height="60"></div>LISTA DE CALÇADOS
-        <div class="menu-icon"><img src="/static/user.png" alt="" height="50"></div>
-    </div>
-</header>
-<div class="container">
-    <aside class="sidebar">
-        <ul>
-            <li>
-                <div class="separacao"><a href="{{ url_for('template') }}"><strong>Menu</strong></a></div>
-            </li>
+{% extends "template.html" %}
 
-            <li>
-                <div class="separacao"><a href="{{ url_for('lista_clientes') }}"><strong>Lista Clientes</strong></a></div>
-            </li>
 
-            <li>
-                <div class="separacao"><a href="{{ url_for('lista_calcados') }}"><strong>Lista Calçados</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('pedidos') }}"><strong>Pedidos</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_pedidos') }}"><strong>Cadastro de Pedidos</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_cliente') }}"><strong>Cadastro de Clientes</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_calcados') }}"><strong>Cadastro de calçados</strong></a></div>
-            </li>
-        </ul>
-        </aside>
-<main class="main-content">
-    <br>
-        {% block conteudo %}
-            <div class="card">t</div>
-        {% endblock %}
-
-</main>
+{% block main %}
+<div class="card">
+    <img src="/static/Tênis%20Lite%20Racer%204.0.avif"
+         alt="Tênis Lite Racer 4.0"
+         height="100px"
+         width="100px">
 </div>
-</body>
-</html>
+
+<div class="card">
+    <img src="/static/Tênis%20Adidas%20Advantage%20Base%202.0%20Masculino%20-%20Azul.webp"
+         alt="Tênis Adidas Advantage Base 2.0 Masculino- Azul"
+         height="100px"
+         width="100px">
+</div>
+
+<div class="card">
+    <img src="/static/Tênis%20Adidas%20Duramo%20RC%202%20Masculino%20-%20Azul%20Turquesa.webp"
+         alt="Tênis Adidas Duramo RC 2.0 Masculino- Azul Turquesa"
+         height="100px"
+         width="100px">
+</div>
+
+<div class="card">
+    <img src="/static/Tênis%20Mizuno%20Wave%20Dynasty%207%20Masculino%20-%20Preto.webp"
+         alt="Tênis Mizuno Wave Dynasty 7 Masculino- Preto"
+         height="100px"
+         width="100px">
+</div>
+
+<div class="card">
+    <img src="/static/Tênis%20Nike%20Air%20Max%20SC%20Masculino.avif"
+         alt="Tênis Nike Air Max SC Masculino"
+         height="100px"
+         width="100px">
+</div>
+
+<div class="card">
+    <img src="/static/Tênis%20Nike%20Air%20Max%2090%20Masculino.avif"
+         alt="Tênis Nike Air Max 90 Masculino"
+         height="100px"
+         width="100px">
+</div>
+
+<div class="card">
+    <img src="/static/Tênis%20Nike%20Killshot%202%20Feminino.avif"
+         alt="Tênis Nike Killshot 2 Feminino"
+         height="100px"
+         width="100px">
+</div>
+{% endblock %}

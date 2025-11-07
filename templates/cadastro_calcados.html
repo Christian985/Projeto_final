@@ -1,59 +1,66 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Organização da Gestão de Pedidos</title>
-    <link rel="stylesheet" href="/static/estilo.css">
-</head>
-<body>
-<header>
-    <div class="menu-top">
-        <div class="menu-title"><img src="/static/thumbnail_1600w-removebg-preview.png" alt="" height="60"></div>CADASTRO DE CALÇADOS
-        <div class="menu-icon"><img src="/static/user.png" alt="" height="50"></div>
+{% extends "template.html" %}
+
+{% block main %}
+
+<div class="main-content">
+    <h2>Cadastro de Calçados</h2>
+
+    <div class="form-container">
+        <form action="submit" method="POST" class="form-cadastro">
+            <div class="form-group">
+                <label for="marca_produto">Marca do Produto:</label>
+                <select id="marca_produto">
+                    <option value="nike">Nike</option>
+                    <option value="adidas">Adidas</option>
+                    <option value="mizuno">Mizuno</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tamanho">Tamanho:</label>
+                <input type="number" id="tamanho" min="33" max="50">
+            </div>
+
+            <div class="form-group">
+                <label for="cor">Cor:</label>
+                <select id="cor">
+                    <option value="azul">Azul</option>
+                    <option value="preto">Preto</option>
+                    <option value="branco">Branco</option>
+                    <option value="vermelho">Vermelho</option>
+
+                    <option value="rosa">Rosa</option>
+                    <option value="cinza">Cinza</option>
+                    <option value="roxo">Roxo</option>
+                    <option value="marrom">Marrom</option>
+
+                    <option value="amarelo">Amarelo</option>
+                    <option value="verde">Verde</option>
+                    <option value="violeta">Violeta</option>
+                    <option value="prata">Prata</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="preco">Preço (R$):</label>
+                <input type="number" id="preco" step="0.01" min="0" placeholder="Ex: 199.90">
+            </div>
+
+            <div class="form-group">
+                <label for="quantidade">Quantidade em estoque:</label>
+                <input type="number" id="quantidade" min="0">
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" rows="3" placeholder="Detalhes do calçado..."></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-enviar">Cadastrar</button>
+                <button type="reset" class="btn-limpar">Limpar</button>
+            </div>
+        </form>
     </div>
-</header>
-<div class="container">
-    <aside class="sidebar">
-
-        <ul>
-            <li>
-                <div class="separacao"><a href="{{ url_for('template') }}"><strong>Menu</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('lista_clientes') }}"><strong>Lista Clientes</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('lista_calcados') }}"><strong>Lista Calçados</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('pedidos') }}"><strong>Pedidos</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_pedidos') }}"><strong>Cadastro de Pedidos</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_cliente') }}"><strong>Cadastro de Clientes</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_calcados') }}"><strong>Cadastro de calçados</strong></a></div>
-            </li>
-        </ul>
-        </aside>
-<main class="main-content">
-
-    <br>
-        {% block conteudo %}
-
-        {% endblock %}
-
-</main>
 </div>
-</body>
-</html>
+{% endblock %}

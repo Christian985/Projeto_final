@@ -1,48 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Gestão de Pedidos - Visualização</title>
-  <link rel="stylesheet" href="/static/pedidos.css">
-</head>
-<body>
-  <header>
-    <h1>Gestão de Pedidos - Visualização</h1>
-  </header>
+{% extends "template.html" %}
 
-  <!-- Lista de pedidos -->
-  <section id="listaPedidos"></section>
 
-  <script>
-    const apiURL = "http://127.0.0.1:5000/pedidos";
+{% block main %}
+<div class="card">p</div>
+{% endblock %}
 
-    // Função para carregar os pedidos da API
-    async function carregarPedidos() {
-      const res = await fetch(apiURL);
-      const pedidos = await res.json();
-      const container = document.getElementById("listaPedidos");
-      container.innerHTML = "";
-
-      pedidos.forEach(p => {
-        const card = document.createElement("div");
-        card.className = "pedido-card";
-        card.dataset.status = p.status;
-
-        const info = document.createElement("div");
-        info.className = "pedido-info";
-        info.textContent = `${p.cliente} - ${p.produto}`;
-
-        const status = document.createElement("div");
-        status.className = "pedido-status";
-        status.textContent = p.status;
-
-        card.appendChild(info);
-        card.appendChild(status);
-        container.appendChild(card);
-      });
-    }
-
-    carregarPedidos();
-  </script>
-</body>
-</html>

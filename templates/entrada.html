@@ -1,0 +1,67 @@
+{% extends "template.html" %}
+
+{% block main %}
+<div class="form-container">
+    <form action="submit" method="post">
+        Entrada
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="id_pessoa">Id da Pessoa:</label>
+            <select id="id_pessoa">
+                <option value="pessoa_1">Pessoa_1</option>
+                <option value="pessoa_2">Pessoa_2</option>
+                <option value="pessoa_3">Pessoa_3</option>
+                <option value="pessoa_4">Pessoa_4</option>
+            </select>
+        </div>
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="id_produto">Id do Produto:</label>
+            <select id="id_produto">
+                <option value="produto_1">Produto_1</option>
+                <option value="produto_2">Produto_2</option>
+                <option value="produto_3">Produto_3</option>
+                <option value="produto_4">Produto_4</option>
+                <option value="produto_5">Produto_5</option>
+                <option value="produto_6">Produto_6</option>
+                <option value="produto_7">Produto_7</option>
+                <option value="produto_8">Produto_8</option>
+                <option value="produto_9">Produto_9</option>
+                <option value="produto_10">Produto_10</option>
+            </select>
+        </div>
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="quantia_produto">Quantia de produto:</label>
+            <input id="quantia_produto" type="number" required placeholder="Digite a Quantia de Produto">
+        </div>
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="nota_fiscal">Nota Fiscal:</label>
+            <input id="nota_fiscal" type="number" required placeholder="Digite a Nota Fiscal">
+        </div>
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="valor_entrada">Valor de Entrada:</label>
+            <input id="valor_entrada" type="number" required placeholder="Digite o Valor da Entrada">
+        </div>
+
+        <br><br>
+
+        <div class="form-actions">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

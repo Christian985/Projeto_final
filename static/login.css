@@ -1,4 +1,3 @@
-
 body {
   display: flex;
   justify-content: center;
@@ -8,7 +7,6 @@ body {
   background-color: #000000;
   font-family: Arial, sans-serif;
 }
-
 
 form {
   background-color: #631919;
@@ -22,7 +20,6 @@ form {
   position: relative;
 }
 
-
 form:before {
   content: "";
   display: block;
@@ -31,9 +28,7 @@ form:before {
   background-color: #ffffff;
   border-radius: 50%;
   margin: -60px auto 20px auto;
-
 }
-
 
 .icon {
   width: 80px;
@@ -48,7 +43,6 @@ form:before {
   color: #111;
 }
 
-
 label {
   align-self: flex-start;
   margin-bottom: 8px;
@@ -56,7 +50,6 @@ label {
   font-weight: bold;
   font-size: 14px;
 }
-
 
 input[type="email"],
 input[type="password"] {
@@ -79,7 +72,6 @@ input[type="password"]:focus {
   box-shadow: 0 0 5px #4CAF50;
 }
 
-
 button {
   width: 100%;
   padding: 14px;
@@ -97,7 +89,6 @@ button:hover {
   transform: translateY(-2px);
 }
 
-
 .esqueceu {
   margin-top: 15px;
   font-size: 13px;
@@ -111,6 +102,6 @@ button:hover {
   color: #fff;
 }
 
-separacao {
+.separacao {
     color : #D42626;
 }

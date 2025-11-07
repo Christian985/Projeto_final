@@ -1,0 +1,61 @@
+{% extends "template.html" %}
+
+{% block main %}
+<div class="form-container">
+    <form action="submit" method="post">
+        Pessoa
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="nome_pessoa">Nome da Pessoa:</label>
+            <input id="nome_pessoa" type="text" required placeholder="Escreva o nome da pessoa">
+        </div>
+        <br><br>
+
+        <div class="form-group">
+            <label for="cargo">Cargo:</label>
+            <select id="cargo">
+                <option value="vendedor">Vendedor0</option>
+                <option value="estoquista">Estoquista</option>
+                <option value="operador_caixa">Operador de Caixa</option>
+                <option value="auxiliar_loja">Auxiliar de Loja</option>
+                <option value="gerente_loja">Gerente de Loja</option>
+                <option value="assistente_loja">Assistente de Loja</option>
+                <option value="lider_estoque">Líder de Estoque</option>
+            </select>
+        </div>
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="cpf_pessoa">CPF da Pessoa:</label>
+            <input id="cpf_pessoa" type="number" required placeholder="Escreva o CPF da Pessoa">
+        </div>
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="senha_hash">Senha:</label>
+            <input id="senha_hash" type="password" required placeholder="Escreva a Senha">
+        </div>
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="status">Status:</label>
+            <select id="status">
+                <option value="Ativo">Ativo</option>
+                <option value="Inativo">Inativo</option>
+            </select>
+        </div>
+
+        <br><br>
+
+        <div class="form-actions">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

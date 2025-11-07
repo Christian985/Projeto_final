@@ -1,0 +1,51 @@
+{% extends "template.html" %}
+
+{% block main %}
+<div class="form-container">
+    <form action="submit" method="post">
+        <div class="form-group">
+            <label for="categoria">Categoria:</label>
+            <select id="categoria">
+                <option value="sapato">Sapato</option>
+                <option value="tenis">Tênis</option>
+                <option value="chinelo">Chinelo</option>
+            </select>
+        </div>
+
+        <br><br>
+
+        <div class="form-group">
+            <label for="id_produto">Id do produto:</label>
+            <select id="id_produto">
+                <optgroup label="Grandes">
+                    <option value="azul">Azul</option>
+                    <option value="preto">Preto</option>
+                    <option value="branco">Branco</option>
+                    <option value="vermelho">Vermelho</option>
+                </optgroup>
+
+                <optgroup label="Médios">
+                    <option value="azul">Azul</option>
+                    <option value="preto">Preto</option>
+                    <option value="branco">Branco</option>
+                    <option value="vermelho">Vermelho</option>
+                </optgroup>
+
+                <optgroup label="Pequenos">
+                    <option value="azul">Azul</option>
+                    <option value="preto">Preto</option>
+                    <option value="branco">Branco</option>
+                    <option value="vermelho">Vermelho</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <br><br>
+
+        <div class="form-actions">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

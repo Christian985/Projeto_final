@@ -1,57 +1,6 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Organização da Gestão de Pedidos</title>
-    <link rel="stylesheet" href="/static/estilo.css">
-</head>
-<body>
-<header>
-    <div class="menu-top">
-        <div class="menu-title"><img src="/static/thumbnail_1600w-removebg-preview.png" alt="" height="60"></div>CADASTRO DE PEDIDOS
-        <div class="menu-icon"><img src="/static/user.png" alt="" height="50"></div>
-    </div>
-</header>
-<div class="container">
-    <aside class="sidebar">
-        <ul>
-            <li>
-                <div class="separacao"><a href="{{ url_for('template') }}"><strong>Menu</strong></a></div>
-            </li>
+{% extends "template.html" %}
 
-            <li>
-                <div class="separacao"><a href="{{ url_for('lista_clientes') }}"><strong>Lista Clientes</strong></a></div>
-            </li>
 
-            <li>
-                <div class="separacao"><a href="{{ url_for('lista_calcados') }}"><strong>Lista Calçados</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('pedidos') }}"><strong>Pedidos</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_pedidos') }}"><strong>Cadastro de Pedidos</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_cliente') }}"><strong>Cadastro de Clientes</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('cadastro_calcados') }}"><strong>Cadastro de calçados</strong></a></div>
-            </li>
-        </ul>
-        </aside>
-<main class="main-content">
-    <br>
-        {% block conteudo %}
-
-        {% endblock %}
-
-</main>
-</div>
-</body>
-</html>
+{% block main %}
+aaaa
+{% endblock %}

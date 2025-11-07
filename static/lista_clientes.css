@@ -12,9 +12,11 @@ body {
   flex-direction: column;
   height: 100vh;
 }
+
 .imagem_logo_menu{
     margin-left: 30%;
 }
+
 /* Cabeçalho */
 header {
     background-color: #292828;
@@ -48,7 +50,6 @@ header h1 {
   border-color: white;
 }
 
-
 /* Ícone ou usuário no canto  */
 .menu-icon {
   font-size: 24px;
@@ -72,7 +73,6 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .sidebar ul {
@@ -83,7 +83,6 @@ header h1 {
 .sidebar li {
   margin-bottom: 15px;
   width: 100%;
-
 }
 
 .sidebar a {
@@ -111,12 +110,10 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
 
 nav li {
   margin-bottom: 10px;
-
 }
 
 nav a {
