@@ -144,6 +144,7 @@ def cadastrar_entrada():
     )
 
     try:
+        # Salva a Entrada
         nova_entrada.save(local_session)
         produto.save(local_session)
 
@@ -152,6 +153,7 @@ def cadastrar_entrada():
             "entrada": nova_entrada.serialize()
         }), 201
 
+    # Caso não tenha Salvado
     except Exception as e:
         return jsonify({"error": f"Erro ao salvar entrada: {str(e)}"}), 500
 
