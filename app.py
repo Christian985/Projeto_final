@@ -1,5 +1,6 @@
 import json
 from time import strftime
+
 from flask import Flask, jsonify, render_template, request, redirect, url_for, flash
 from sqlalchemy import select
 from sqlalchemy.orm import joinedload
@@ -9,11 +10,9 @@ from flask_jwt_extended import create_access_token, jwt_required, JWTManager, ge
 from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, current_user, login_required, login_user, logout_user, current_user
-
 app = Flask(__name__)
 app.config['JWT_SECRET_KEY'] = "03050710"
 jwt = JWTManager(app)
-
 
 # Cadastro (POST)
 @app.route('/pessoas', methods=['POST'])
@@ -38,6 +37,7 @@ def cadastrar_pessoas():
 
             if not cpf or len(cpf) != 11:
                 return jsonify({"msg": "O CPF deve conter exatamente 11 dígitos numéricos."}), 400
+
 
             form_nova_pessoa = Pessoa(
                 nome_pessoa=nome_pessoa,
@@ -97,7 +97,6 @@ def cadastrar_produto():
     finally:
         db_session.close()
 
-
 @app.route("/entradas", methods=["POST"])
 def cadastrar_entrada():
     dados = request.json
@@ -155,7 +154,6 @@ def cadastrar_entrada():
 
     except Exception as e:
         return jsonify({"error": f"Erro ao salvar entrada: {str(e)}"}), 500
-
 
 @app.route('/vendas', methods=['POST'])
 def cadastrar_venda():
@@ -217,7 +215,6 @@ def cadastrar_venda():
     finally:
         db_session.close()
 
-
 @app.route('/categorias', methods=['POST'])
 def cadastrar_categoria():
     db_session = local_session()
@@ -248,7 +245,6 @@ def cadastrar_categoria():
     finally:
         db_session.close()
 
-
 # LISTAR (GET)
 @app.route('/produtos', methods=['GET'])
 def listar_produtos():
@@ -270,7 +266,6 @@ def listar_produtos():
     finally:
         db_session.close()
 
-
 @app.route('/categorias', methods=['GET'])
 def listar_categorias():
     db_session = local_session()
@@ -288,7 +283,6 @@ def listar_categorias():
         return jsonify({"error": str(e)})
     finally:
         db_session.close()
-
 
 @app.route('/entradas', methods=['GET'])
 def listar_entradas():
@@ -308,7 +302,6 @@ def listar_entradas():
     finally:
         db_session.close()
 
-
 @app.route('/vendas', methods=['GET'])
 def listar_vendas():
     db_session = local_session()
@@ -325,7 +318,6 @@ def listar_vendas():
         return jsonify({"error": str(e)})
     finally:
         db_session.close()
-
 
 @app.route('/pessoas', methods=['GET'])
 def listar_pessoas():
@@ -346,7 +338,6 @@ def listar_pessoas():
     finally:
         db_session.close()
 
-
 # EDITAR (PUT)
 @app.route('/produtos/<id_produto>', methods=['PUT'])
 def editar_produto(id_produto):
@@ -355,6 +346,7 @@ def editar_produto(id_produto):
         dados_editar_produto = request.get_json()
 
         produto_resultado = db_session.execute(select(Produto).filter_by(id_produto=int(id_produto))).scalar()
+
 
         if not produto_resultado:
             return jsonify({"error": "produto não encontrado"}), 400
@@ -391,7 +383,6 @@ def editar_produto(id_produto):
     finally:
         db_session.close()
 
-
 @app.route('/categorias/<id_categoria>', methods=['PUT'])
 def editar_categoria(id_categoria):
     db_session = local_session()
@@ -400,21 +391,25 @@ def editar_categoria(id_categoria):
 
         categoria_resultado = db_session.execute(select(Categoria).filter_by(id_categoria=int(id_categoria))).scalar()
 
+        # Caso não exista a Categoria
         if not categoria_resultado:
             return jsonify({
                 "error": "Categoria não encontrada"
             })
 
+        # Caso o Campo não exista
         if not 'nome_categoria' in dados_editar_categoria:
             return jsonify({
                 "error": "Campo inexistente"
             }), 400
 
+        # Caso não tenha Preenchido todos os Campos
         if dados_editar_categoria['nome_categoria'] == "":
             return jsonify({
                 "error": "Preencher todos os campos"
             }), 400
 
+        # Tabela para Editar Categoria
         else:
             categoria_resultado.nome_categoria = dados_editar_categoria['nome_categoria']
 
@@ -425,43 +420,50 @@ def editar_categoria(id_categoria):
 
             return jsonify(resultado), 200
 
+    # Caso o Valor Inserido seja Inválido
     except ValueError:
         return jsonify({
             "error": "Valor inserido inválido"
         }), 400
 
+    # Caso exista algum Erro
     except Exception as e:
         return jsonify({"error": str(e)})
     finally:
         db_session.close()
-
 
 @app.route('/pessoas/<id_pessoa>', methods=['PUT'])
 # @jwt_required()
 def editar_pessoa(id_pessoa):
     db_session = local_session()
     try:
+        # Pega a Informação
         dados_editar_pessoa = request.get_json()
 
         pessoa_resultado = db_session.execute(select(Pessoa).filter_by(id_pessoa=int(id_pessoa))).scalar()
 
+        # Caso não exista a Pessoa
         if not pessoa_resultado:
             return jsonify({"error": "Pessoa não encontrada"}), 400
 
         campos_obrigatorios = ["nome_pessoa", "cargo", "senha", "cpf_pessoa"]
 
+        # Caso não tenha Preenchido todos os Campos
         if any(not dados_editar_pessoa[campo] for campo in campos_obrigatorios):
             return jsonify({"error": "Preencher todos os campos"}), 400
 
+        # Caso não exista o Campo
         if not all(campo in dados_editar_pessoa for campo in campos_obrigatorios):
             return jsonify({"error": "Campo inexistente"}), 400
 
+        # Edita a Tabela Pessoa
         else:
             pessoa_resultado.nome_pessoa = dados_editar_pessoa['nome_pessoa']
             pessoa_resultado.cargo = dados_editar_pessoa['cargo']
             pessoa_resultado.senha = dados_editar_pessoa['senha']
             pessoa_resultado.cpf_pessoa = dados_editar_pessoa['cpf_pessoa']
 
+            # Salva a Senha Nova
             pessoa_resultado.set_senha_hash(pessoa_resultado.senha)
             pessoa_resultado.save(db_session)
 
@@ -470,6 +472,7 @@ def editar_pessoa(id_pessoa):
 
             return jsonify(resultado), 200
 
+    # Caso o Valor Inserido seja Inválido
     except ValueError:
         return jsonify({
             "error": "Valor inserido inválido"
@@ -479,7 +482,6 @@ def editar_pessoa(id_pessoa):
         return jsonify({"error": str(e)})
     finally:
         db_session.close()
-
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=5000)
