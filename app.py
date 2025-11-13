@@ -59,6 +59,7 @@ def cadastrar_pessoas():
 
 @app.route('/produtos', methods=['POST'])
 def cadastrar_produto():
+    # Abre o Banco
     db_session = local_session()
     try:
         dados_produto = request.get_json()
@@ -92,6 +93,7 @@ def cadastrar_produto():
 
             return jsonify(resultado), 201
 
+    # Caso ocorra algum Erro
     except Exception as e:
         return jsonify({"error": str(e)})
     finally:
@@ -106,14 +108,15 @@ def cadastrar_entrada():
     if not all(campo in dados for campo in campos_obrigatorios):
         return jsonify({"error": "Campos obrigatórios ausentes"}), 400
 
+    # Caso os Campos não tenham sido Preenchidos
     if any(dados[campo] == "" for campo in campos_obrigatorios):
         return jsonify({"error": "Preencha todos os campos"}), 400
 
-    # Verificar se o produto existe
+    # Verificar se o Produto existe
     produto = local_session.query(Produto).filter_by(id_produto=dados["id_produto"]).first()
     if not produto:
         return jsonify({"error": "Insumo não encontrado"}), 404
-    # Verificar se a pessoa existe
+    # Verificar se a Pessoa existe
     pessoa = local_session.query(Pessoa).filter_by(id_pessoa=dados["id_pessoa"]).first()
     if not produto:
         return jsonify({"error": "Insumo não encontrado"}), 404
@@ -124,11 +127,13 @@ def cadastrar_entrada():
     try:
         qtd = int(dados["quantidade"])
         valor = float(dados["valor_entrada"])
+    # Caso o Valor de Entrada seja Inválido
     except ValueError:
         return jsonify({"error": "Quantidade e valor devem ser numéricos"}), 400
 
+    # Caso o Valor seja Menor ou igual a Zero
     if qtd <= 0 or valor <= 0:
-        return jsonify({"error": "Quantidade e valor devem ser maiores que zero"}), 400
+        return jsonify({"error": "Quantidade e Valor devem ser maiores que Zero"}), 400
 
     # Atualiza o estoque do insumo
     produto.qtd_produto += qtd
