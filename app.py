@@ -157,11 +157,14 @@ def cadastrar_entrada():
 
 @app.route('/vendas', methods=['POST'])
 def cadastrar_venda():
+    # Abre o Banco
     db_session = local_session()
     try:
+        # Pega a Informação
         dados = request.get_json()
         campos = ["forma_pagamento", "quantidade", "id_pessoa", "id_produto"]
 
+        # Caso os Campos não tenham sido Preenchidos
         if not all(campo in dados for campo in campos):
             return jsonify({"error": "Campos obrigatórios não informados"}), 400
 
@@ -174,21 +177,23 @@ def cadastrar_venda():
         produto = db_session.query(Produto).filter_by(id_produto=id_produto).first()
         pessoa = db_session.query(Pessoa).filter_by(id_pessoa=id_pessoa).first()
 
+        # Caso não encontre o Produto
         if not produto:
             return jsonify({"error": "produto não encontrado"}), 404
+        # Caso não encontre a Pessoa
         if not pessoa:
             return jsonify({"error": "Pessoa não encontrada"}), 404
 
-        # Verificar estoque
+        # Verificar Estoque
         if produto.qtd_produto < quantidade:
             return jsonify({"error": f"Estoque insuficiente para: {produto.nome_produto}"}), 400
 
-        # Dar baixa no produto
+        # Dar Baixa no Produto
         produto = db_session.query(Produto).filter_by(id_produto=id_produto).first()
         produto.qtd_produto -= quantidade
         db_session.add(produto)
 
-        # Registrar vendas
+        # Registrar Vendas
         vendas_registradas = []
         for _ in range(quantidade):
             nova_venda = Venda(
@@ -199,16 +204,19 @@ def cadastrar_venda():
                 valor_venda=produto.custo_produto,
                 forma_pagamento=forma_pagamento,
             )
+            # Salva as Vendas Cadastradas
             nova_venda.save(db_session)
             venda_dict = nova_venda.serialize()
             # converter de volta para int no retorno
             vendas_registradas.append(venda_dict)
 
+        # Mostra tod0as as Vendas Cadastradas
         return jsonify({
             "success": f"{quantidade} vendas registradas com sucesso",
             "vendas": vendas_registradas
         }), 201
 
+    # Caso ocorra algum Erro
     except Exception as e:
         db_session.rollback()
         return jsonify({"error": str(e)}), 500
@@ -217,6 +225,7 @@ def cadastrar_venda():
 
 @app.route('/categorias', methods=['POST'])
 def cadastrar_categoria():
+    # Abre o Banco
     db_session = local_session()
     try:
         # Pega a Informação
