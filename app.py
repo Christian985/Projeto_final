@@ -219,6 +219,7 @@ def cadastrar_venda():
 def cadastrar_categoria():
     db_session = local_session()
     try:
+        # Pega a Informação
         dados_categoria = request.get_json()
 
         # Caso o Campo não exista
@@ -232,6 +233,7 @@ def cadastrar_categoria():
                 "error": "Preencher todos os campos"
             })
         else:
+            # Cria a Categoria
             nome_categoria = dados_categoria['nome_categoria']
             form_nova_categoria = Categoria(
                 nome_categoria=nome_categoria,

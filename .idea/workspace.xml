@@ -149,47 +149,7 @@
       <workItem from="1761302397707" duration="14115000" />
       <workItem from="1762452656658" duration="3014000" />
       <workItem from="1762513044978" duration="6346000" />
-      <workItem from="1763032213508" duration="493000" />
-    </task>
-    <task id="LOCAL-00002" summary="commit">
-      <option name="closed" value="true" />
-      <created>1749214835589</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1749214835589</updated>
-    </task>
-    <task id="LOCAL-00003" summary="commit">
-      <option name="closed" value="true" />
-      <created>1749215100004</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1749215100004</updated>
-    </task>
-    <task id="LOCAL-00004" summary="commit">
-      <option name="closed" value="true" />
-      <created>1749219513914</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1749219513914</updated>
-    </task>
-    <task id="LOCAL-00005" summary="commit">
-      <option name="closed" value="true" />
-      <created>1749219591361</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1749219591361</updated>
-    </task>
-    <task id="LOCAL-00006" summary="commit">
-      <option name="closed" value="true" />
-      <created>1749219841670</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1749219841670</updated>
+      <workItem from="1763032213508" duration="2129000" />
     </task>
     <task id="LOCAL-00007" summary="commit">
       <option name="closed" value="true" />
@@ -543,7 +503,47 @@
       <option name="project" value="LOCAL" />
       <updated>1762522549208</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Projeto Base">
+      <option name="closed" value="true" />
+      <created>1763032724389</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1763032724389</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Projeto Base">
+      <option name="closed" value="true" />
+      <created>1763032774438</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1763032774438</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Projeto Base">
+      <option name="closed" value="true" />
+      <created>1763032850745</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1763032850745</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Projeto Base">
+      <option name="closed" value="true" />
+      <created>1763032947066</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1763032947066</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Projeto Base">
+      <option name="closed" value="true" />
+      <created>1763033962518</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1763033962518</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
