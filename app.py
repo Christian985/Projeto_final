@@ -413,6 +413,7 @@ def editar_categoria(id_categoria):
         else:
             categoria_resultado.nome_categoria = dados_editar_categoria['nome_categoria']
 
+            # Salva a Categoria
             categoria_resultado.save(db_session)
 
             dicio = categoria_resultado.serialize()
