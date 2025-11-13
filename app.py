@@ -221,10 +221,12 @@ def cadastrar_categoria():
     try:
         dados_categoria = request.get_json()
 
+        # Caso o Campo não exista
         if not 'nome_categoria' in dados_categoria:
             return jsonify({
                 "error": "Campo inexistente",
             })
+        # Caso não tenha Preenchido todos
         if dados_categoria['nome_categoria'] == "":
             return jsonify({
                 "error": "Preencher todos os campos"
@@ -234,13 +236,16 @@ def cadastrar_categoria():
             form_nova_categoria = Categoria(
                 nome_categoria=nome_categoria,
             )
+            # Salva a Categoria
             form_nova_categoria.save(db_session)
 
             dicio = form_nova_categoria.serialize()
+            # Mostra se Salvou e mostra todas as Categorias
             resultado = {"success": "Categoria cadastrada com sucesso", "categorias": dicio}
 
             return jsonify(resultado), 201
     except Exception as e:
+        # Caso ocorra algum Erro
         return jsonify({"error": str(e)})
     finally:
         db_session.close()
@@ -250,7 +255,7 @@ def cadastrar_categoria():
 def listar_produtos():
     db_session = local_session()
     try:
-
+        # Pega e mostra todos os Produtos
         sql_produto = select(Produto)
         resultado_produtos = db_session.execute(sql_produto).scalars()
         produtos = []
@@ -261,6 +266,7 @@ def listar_produtos():
             "produtos": produtos,
             "success": "Listado com sucesso",
         })
+    # Caso ocorra algum Erro
     except Exception as e:
         return jsonify({"error": str(e)})
     finally:
@@ -270,6 +276,7 @@ def listar_produtos():
 def listar_categorias():
     db_session = local_session()
     try:
+        # Pega e Mostra todas as Categorias
         sql_categorias = select(Categoria)
         resultado_categorias = db_session.execute(sql_categorias).scalars()
         categorias = []
@@ -279,6 +286,7 @@ def listar_categorias():
             "categorias": categorias,
             "success": "Listado com sucesso",
         })
+    # Caso ocorra algum Erro
     except Exception as e:
         return jsonify({"error": str(e)})
     finally:
@@ -288,6 +296,7 @@ def listar_categorias():
 def listar_entradas():
     db_session = local_session()
     try:
+        # Pega e mostra todas as Entradas
         sql_entradas = select(Entrada)
         resultado_entradas = db_session.execute(sql_entradas).scalars()
         entradas = []
@@ -297,6 +306,7 @@ def listar_entradas():
             "entradas": entradas,
             "success": "Listado com sucesso",
         })
+    # Caso ocorra algum Erro
     except Exception as e:
         return jsonify({"error": str(e)})
     finally:
@@ -306,6 +316,7 @@ def listar_entradas():
 def listar_vendas():
     db_session = local_session()
     try:
+        # Pega e mostra todas as Vendas
         sql_vendas = select(Venda)
         venda_resultado = db_session.execute(sql_vendas).scalars()
         vendas = []
@@ -314,6 +325,7 @@ def listar_vendas():
         return jsonify({
             "vendas": vendas
         })
+    # Caso ocorra algum Erro
     except Exception as e:
         return jsonify({"error": str(e)})
     finally:
@@ -323,6 +335,7 @@ def listar_vendas():
 def listar_pessoas():
     db_session = local_session()
     try:
+        # Pega e mostra todas as Pessoas
         sql_pessoa = select(Pessoa)
         resultado_pessoas = db_session.execute(sql_pessoa).scalars()
         pessoas = []
@@ -333,6 +346,7 @@ def listar_pessoas():
             "pessoas": pessoas,
             "success": "Listado com sucesso"
         })
+    # Caso ocorra um Erro
     except Exception as e:
         return jsonify({"error": str(e)})
     finally:
@@ -343,22 +357,26 @@ def listar_pessoas():
 def editar_produto(id_produto):
     db_session = local_session()
     try:
+        # Pega a Informação
         dados_editar_produto = request.get_json()
 
         produto_resultado = db_session.execute(select(Produto).filter_by(id_produto=int(id_produto))).scalar()
 
-
+        # Caso o Produto não seja encontrado
         if not produto_resultado:
             return jsonify({"error": "produto não encontrado"}), 400
 
         campos_obrigatorios = ["id_categoria", "nome_produto", "tamanho", "genero", "marca_produto", "custo_produto"]
 
+        # Caso não tenha Preenchido todos os Campos
         if any(not dados_editar_produto[campo] for campo in campos_obrigatorios):
             return jsonify({"error": "Preencher todos os campos"}), 400
 
+        # Caso não exista o Campo
         if not all(campo in dados_editar_produto for campo in campos_obrigatorios):
             return jsonify({"error": "Campo inexistente"}), 400
 
+        # Tabela para Editar Produto
         else:
             produto_resultado.nome_produto = dados_editar_produto['nome_produto']
             produto_resultado.tamanho = dados_editar_produto['tamanho']
@@ -367,12 +385,14 @@ def editar_produto(id_produto):
             produto_resultado.genero = dados_editar_produto['genero']
             produto_resultado.id_categoria = dados_editar_produto['id_categoria']
 
+            # Salva o Produto
             produto_resultado.save(db_session)
             dicio = produto_resultado.serialize()
             resultado = {"success": "produto editado com sucesso", "produtos": dicio}
 
             return jsonify(resultado), 201
 
+    # Caso o Valor seja Inválido
     except ValueError:
         return jsonify({
             "error": "Valor inserido inválido"
