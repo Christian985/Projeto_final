@@ -378,6 +378,7 @@ def editar_produto(id_produto):
             "error": "Valor inserido inválido"
         }), 400
 
+    # Caso ocorra algum Erro
     except Exception as e:
         return jsonify({"error": str(e)}), 500
     finally:
