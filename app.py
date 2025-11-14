@@ -392,6 +392,7 @@ def listar_vendas():
 
 @app.route('/pessoas', methods=['GET'])
 def listar_pessoas():
+    # Abre o Banco
     db_session = local_session()
     try:
         # Pega e mostra todas as Pessoas
