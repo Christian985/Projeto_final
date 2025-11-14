@@ -409,6 +409,7 @@ def listar_pessoas():
     # Caso ocorra um Erro
     except Exception as e:
         return jsonify({"error": str(e)})
+    # Fecha o Banco
     finally:
         db_session.close()
 
