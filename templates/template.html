@@ -17,45 +17,69 @@
     <aside class="sidebar">
         <ul>
             <li>
-                <div class="separacao"><a href="{{ url_for('index') }}"><strong>Menu</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('listar_clientes') }}"><strong>Lista Clientes</strong></a>
+                <div class="separacao">
+                    <a href="{{ url_for('index') }}">
+                        <strong>Menu</strong>
+                    </a>
                 </div>
             </li>
 
             <li>
-                <div class="separacao"><a href="{{ url_for('index') }}"><strong>Lista Calçados</strong></a>
+                <div class="separacao">
+                    <a href="{{ url_for('listar_clientes') }}">
+                        <strong>Lista Clientes</strong>
+                    </a>
                 </div>
             </li>
 
             <li>
-                <div class="separacao"><a href="{{ url_for('index') }}"><strong>Pedidos</strong></a></div>
-            </li>
-
-            <li>
-                <div class="separacao"><a href="{{ url_for('index') }}"><strong>Cadastro de Pedidos</strong></a>
+                <div class="separacao">
+                    <a href="{{ url_for('lista_calcados') }}">
+                        <strong>Lista Calçados</strong>
+                    </a>
                 </div>
             </li>
 
             <li>
-                <div class="separacao"><a href="{{ url_for('index') }}"><strong>Cadastro de Clientes</strong></a>
+                <div class="separacao">
+                    <a href="{{ url_for('Pedidos') }}">
+                        <strong>Pedidos</strong>
+                    </a>
                 </div>
             </li>
 
             <li>
-                <div class="separacao"><a href="{{ url_for('index') }}"><strong>Cadastro de calçados</strong></a></div>
+                <div class="separacao">
+                    <a href="{{ url_for('cadastro_pedidos') }}">
+                        <strong>Cadastro de Pedidos</strong>
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <div class="separacao">
+                    <a href="{{ url_for('cadastro_clientes') }}">
+                        <strong>Cadastro de Clientes</strong>
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <div class="separacao"><a href="{{ url_for('cadastro_calcados') }}"><strong>Cadastro de calçados</strong></a></div>
             </li>
         </ul>
     </aside>
     <main class="main-content">
         {% block main %}
-        <div class="intro"><p>SEJAM BEM VINDOS A INDUSTRY GEAR P</p></div>
+        <div class="intro">
+            <p>SEJAM BEM VINDOS A INDUSTRY GEAR P</p>
+        </div>
+
         <br>
 
-        <div class="imagem_logo_menu"><img src="/static/thumbnail_1600w-letras.png" alt="" height="500"></div>
-
+        <div class="imagem_logo_menu">
+            <img src="/static/thumbnail_1600w-letras.png" alt="" height="500">
+        </div>
 
         {% endblock %}
 

@@ -29,6 +29,7 @@ def listar_clientes():
 @app.route('/produtos', methods=['GET'])
 def listar_produtos():
     vendas = routes.get_produtos()
+    
     return render_template('cadastro_produtos.html')
 
 

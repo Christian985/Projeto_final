@@ -50,4 +50,4 @@ def get_produtos():
         return {
             "error": f"{e}",
         }
-print(get_produtos())
+# print(get_produtos()['produtos'])
