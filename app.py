@@ -15,9 +15,9 @@ def index():
 
 
 # Renderiza a Lista de Pessoas
-@app.route('/pessoas')
-def listar_clientes():
-    return render_template('cadastro_pessoas.html')
+# @app.route('/pessoas')
+# def listar_clientes():
+#     return render_template('cadastro_pessoas.html')
 
 # Renderiza a Lista de Pessoas
 @app.route('/pessoas')
@@ -29,8 +29,7 @@ def listar_clientes():
 @app.route('/produtos', methods=['GET'])
 def listar_produtos():
     vendas = routes.get_produtos()
-    
-    return render_template('cadastro_produtos.html')
+    return render_template('lista_calcados.html', vendas=vendas['produtos'])
 
 
 # Renderiza a Lista de Vendas
@@ -47,4 +46,4 @@ def listar_categorias():
 
 # Inicia
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    app.run(debug=True, port=5002)
