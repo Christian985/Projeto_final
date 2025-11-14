@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, render_template, request, redirect, url_for, flash
 from flask_jwt_extended import create_access_token, jwt_required, JWTManager
-
 import routes
 
 app = Flask(__name__)
