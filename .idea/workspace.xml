@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="inicio aplicação web">
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categoria.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_categorias.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/entrada.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_entrada.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/produtos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_produtos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/venda.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_venda.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_venda.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_vendas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index2.html" beforeDir="false" />
     </list>
     <list id="b12d30e6-d3c6-4f10-a7b4-b57492a3cc44" name="Changes by Aluno" comment="" />
     <list id="b5ec9795-366a-41b2-adf9-b4a6b7bf0272" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
@@ -154,15 +153,7 @@
       <workItem from="1762452656658" duration="3014000" />
       <workItem from="1762513044978" duration="6346000" />
       <workItem from="1763032213508" duration="7183000" />
-      <workItem from="1763117098567" duration="3879000" />
-    </task>
-    <task id="LOCAL-00018" summary="commit">
-      <option name="closed" value="true" />
-      <created>1756408514128</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1756408514128</updated>
+      <workItem from="1763117098567" duration="4281000" />
     </task>
     <task id="LOCAL-00019" summary="commit">
       <option name="closed" value="true" />
@@ -548,7 +539,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763120552624</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="inicio aplicação web">
+      <option name="closed" value="true" />
+      <created>1763121003442</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1763121003443</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
