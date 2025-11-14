@@ -13,6 +13,9 @@ def index():
 def listar_clientes():
     return render_template('cadastro_pessoa.html')
 
+@app.route('/produtos', methods=['GET', 'POST'])
+def listar_produtos():
+    return render_template('cadastro_produtos.html')
 
 # Inicia
 if __name__ == '__main__':
