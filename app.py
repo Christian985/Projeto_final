@@ -13,7 +13,7 @@ def index():
 # Renderiza o Cadastro de Pessoas
 @app.route('/pessoas', methods=['GET', 'POST'])
 def listar_clientes():
-    return render_template('cadastro_pessoa.html')
+    return render_template('cadastro_pessoas.html')
 
 # Renderiza o Cadastro de Produtos
 @app.route('/produtos', methods=['GET', 'POST'])
