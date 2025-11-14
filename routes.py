@@ -50,4 +50,15 @@ def get_produtos():
         return {
             "error": f"{e}",
         }
+def get_categorias():
+    try:
+        url = f"{base_url}/categoria"
+        response = requests.get(url)
+        return response.json()
+    except Exception as e:
+        print(e)
+        return {
+            "error": f"{e}",
+        }
+
 # print(get_produtos()['produtos'])

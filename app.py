@@ -19,8 +19,14 @@ def listar_clientes():
     return render_template('cadastro_pessoas.html')
 
 
+# Renderiza o Cadastro de Pessoas
+@app.route('/pessoas')
+def cadastrar_pessoas():
+    return render_template('cadastro_pessoas.html')
+
+
 # Renderiza a Lista de Produtos
-@app.route('/produtos', methods=['GET'])
+@app.route('/produtos')
 def listar_produtos():
     vendas = routes.get_produtos()
     return render_template('lista_calcados.html', vendas=vendas['produtos'])
@@ -32,8 +38,9 @@ def listar_vendas():
     return render_template('cadastro_vendas.html')
 
 
+
 # Renderiza a Lista de Categoria
-@app.route('/categorias', methods=['GET', 'POST'])
+@app.route('/categorias')
 def listar_categorias():
     return render_template('cadastro_categorias.html')
 
