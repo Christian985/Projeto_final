@@ -26,7 +26,7 @@ def listar_vendas():
     return render_template('cadastro_vendas.html')
 
 # Renderiza o Cadastro de Categoria
-@app.route('/categoria', methods=['GET', 'POST'])
+@app.route('/categorias', methods=['GET', 'POST'])
 def listar_categorias():
     return render_template('cadastro_categorias.html')
 
