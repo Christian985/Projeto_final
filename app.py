@@ -1,6 +1,5 @@
 import json
 from time import strftime
-
 from flask import Flask, jsonify, render_template, request, redirect, url_for, flash
 from sqlalchemy import select
 from sqlalchemy.orm import joinedload
@@ -10,49 +9,61 @@ from flask_jwt_extended import create_access_token, jwt_required, JWTManager, ge
 from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, current_user, login_required, login_user, logout_user, current_user
+
 app = Flask(__name__)
 app.config['JWT_SECRET_KEY'] = "03050710"
 jwt = JWTManager(app)
 
+
 # Cadastro (POST)
 @app.route('/pessoas', methods=['POST'])
 def cadastrar_pessoas():
+    # Abre o Banco
     db_session = local_session()
     try:
+        # Pega a Informação
         dados_pessoas = request.get_json()
 
         campos_obrigatorios = ["nome_pessoa", "cpf_pessoa", "cargo", "senha"]
 
+        # Caso não exista o Campo
         if not all(campo in dados_pessoas for campo in campos_obrigatorios):
             return jsonify({"error": "Campo inexistente"}), 400
 
+        # Caso não tenha Preenchido todos os Campos
         if any(not dados_pessoas[campo] for campo in campos_obrigatorios):
             return jsonify({"error": "Preencher todos os campos"}), 400
 
+        # Tabela para Cadastrar Pessoa
         else:
             nome_pessoa = dados_pessoas["nome_pessoa"]
             cpf = dados_pessoas["cpf_pessoa"]
             cargo = dados_pessoas["cargo"]
             senha = dados_pessoas["senha"]
 
+            # Caso o CPF tenha passado ou ultrapassado 11 Dígitos
             if not cpf or len(cpf) != 11:
                 return jsonify({"msg": "O CPF deve conter exatamente 11 dígitos numéricos."}), 400
-
 
             form_nova_pessoa = Pessoa(
                 nome_pessoa=nome_pessoa,
                 cpf_pessoa=cpf,
                 cargo=cargo
             )
+            # Salva a Pessoa com Senha Hash
             form_nova_pessoa.set_senha_hash(senha)
             form_nova_pessoa.save(db_session)
+            # Coloc no Dicionário
             dicio = form_nova_pessoa.serialize()
+            # Mostra se Cadastrou e todas as Pessoas Cadastradas
             resultado = {"success": "Cadastrado com sucesso", "pessoas": dicio}
 
             return jsonify(resultado), 201
 
+    # Caso ocorra algum Erro
     except Exception as e:
         return jsonify({"error": str(e)})
+    # Fecha o Banco
     finally:
         db_session.close()
 
@@ -62,16 +73,21 @@ def cadastrar_produto():
     # Abre o Banco
     db_session = local_session()
     try:
+        # Pega a Informação
         dados_produto = request.get_json()
 
+        # Campos Obrigatórios
         campos_obrigatorios = ["id_categoria", "nome_produto", "tamanho", "genero", "marca_produto", "custo_produto"]
 
+        # Caso não exista o Campo
         if not all(campo in dados_produto for campo in campos_obrigatorios):
             return jsonify({"error": "Campo inexistente"}), 400
 
+        # Caso não tenha Preenchido todos os Campos
         if any(not dados_produto[campo] for campo in campos_obrigatorios):
             return jsonify({"error": "Preencher todos os campos"}), 400
 
+        # Tabela para Cadastrar Produto
         else:
             id_categoria = dados_produto['id_categoria']
             nome_produto = dados_produto['nome_produto']
@@ -87,8 +103,11 @@ def cadastrar_produto():
                 custo_produto=custo_produto,
                 genero=genero
             )
+            # Salva o Produto
             form_novo_produto.save(db_session)
+            # Coloca o Produto no Dicionário
             dicio = form_novo_produto.serialize()
+            # Mostra se Cadastrou e todas os Produtos
             resultado = {"success": "Cadastrado com sucesso", "produtos": dicio}
 
             return jsonify(resultado), 201
@@ -99,8 +118,10 @@ def cadastrar_produto():
     finally:
         db_session.close()
 
+
 @app.route("/entradas", methods=["POST"])
 def cadastrar_entrada():
+    # Pega a Informação
     dados = request.json
 
     # Campos obrigatórios
@@ -161,6 +182,7 @@ def cadastrar_entrada():
     # Caso não tenha Salvado
     except Exception as e:
         return jsonify({"error": f"Erro ao salvar entrada: {str(e)}"}), 500
+
 
 @app.route('/vendas', methods=['POST'])
 def cadastrar_venda():
@@ -230,6 +252,7 @@ def cadastrar_venda():
     finally:
         db_session.close()
 
+
 @app.route('/categorias', methods=['POST'])
 def cadastrar_categoria():
     # Abre o Banco
@@ -268,6 +291,7 @@ def cadastrar_categoria():
     finally:
         db_session.close()
 
+
 # LISTAR (GET)
 @app.route('/produtos', methods=['GET'])
 def listar_produtos():
@@ -290,6 +314,7 @@ def listar_produtos():
     finally:
         db_session.close()
 
+
 @app.route('/categorias', methods=['GET'])
 def listar_categorias():
     db_session = local_session()
@@ -309,6 +334,7 @@ def listar_categorias():
         return jsonify({"error": str(e)})
     finally:
         db_session.close()
+
 
 @app.route('/entradas', methods=['GET'])
 def listar_entradas():
@@ -330,6 +356,7 @@ def listar_entradas():
     finally:
         db_session.close()
 
+
 @app.route('/vendas', methods=['GET'])
 def listar_vendas():
     db_session = local_session()
@@ -348,6 +375,7 @@ def listar_vendas():
         return jsonify({"error": str(e)})
     finally:
         db_session.close()
+
 
 @app.route('/pessoas', methods=['GET'])
 def listar_pessoas():
@@ -369,6 +397,7 @@ def listar_pessoas():
         return jsonify({"error": str(e)})
     finally:
         db_session.close()
+
 
 # EDITAR (PUT)
 @app.route('/produtos/<id_produto>', methods=['PUT'])
@@ -422,6 +451,7 @@ def editar_produto(id_produto):
     finally:
         db_session.close()
 
+
 @app.route('/categorias/<id_categoria>', methods=['PUT'])
 def editar_categoria(id_categoria):
     db_session = local_session()
@@ -471,6 +501,7 @@ def editar_categoria(id_categoria):
         return jsonify({"error": str(e)})
     finally:
         db_session.close()
+
 
 @app.route('/pessoas/<id_pessoa>', methods=['PUT'])
 # @jwt_required()
@@ -523,6 +554,7 @@ def editar_pessoa(id_pessoa):
         return jsonify({"error": str(e)})
     finally:
         db_session.close()
+
 
 # Inicia
 if __name__ == '__main__':
