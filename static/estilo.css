@@ -195,3 +195,9 @@ li{
 .btn-enviar:hover, .btn-limpar:hover {
     opacity: 0.8;
 }
+
+textarea {
+    width: 200px;
+    max-width: 400px;
+    max-height: 30px;
+}

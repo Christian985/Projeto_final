@@ -3,35 +3,27 @@
 {% block main %}
 <div class="form-container">
     <form action="submit" method="post">
-        Pessoa
+        <h1>Pessoa</h1>
 
         <br><br>
 
         <div class="form-group">
-            <label for="nome_pessoa">Nome da Pessoa:</label>
-            <input id="nome_pessoa" type="text" required placeholder="Escreva o nome da pessoa">
+            <label for="nome_pessoa">Nome:</label>
+            <textarea id="nome_pessoa" required placeholder="Escreva o Nome"></textarea>
         </div>
 
         <br><br>
 
         <div class="form-group">
-            <label for="cpf_pessoa">CPF da Pessoa:</label>
-            <input id="cpf_pessoa" type="number" required placeholder="Escreva o CPF da Pessoa">
+            <label for="cpf_pessoa">CPF:</label>
+            <input id="cpf_pessoa" type="number" required placeholder="Escreva o CPF">
         </div>
 
         <br><br>
 
         <div class="form-group">
             <label for="cargo">Cargo:</label>
-            <select id="cargo">
-                <option value="vendedor">Vendedor</option>
-                <option value="estoquista">Estoquista</option>
-                <option value="operador_caixa">Operador de Caixa</option>
-                <option value="auxiliar_loja">Auxiliar de Loja</option>
-                <option value="gerente_loja">Gerente de Loja</option>
-                <option value="assistente_loja">Assistente de Loja</option>
-                <option value="lider_estoque">Líder de Estoque</option>
-            </select>
+            <input id="cargo" type="text" required placeholder="Escreva o Cargo">
         </div>
 
         <br><br>
