@@ -300,6 +300,7 @@ def cadastrar_categoria():
 # LISTAR (GET)
 @app.route('/produtos', methods=['GET'])
 def listar_produtos():
+    # Abre o Banco
     db_session = local_session()
     try:
         # Pega e mostra todos os Produtos
@@ -316,12 +317,14 @@ def listar_produtos():
     # Caso ocorra algum Erro
     except Exception as e:
         return jsonify({"error": str(e)})
+    # Fecha o Banco
     finally:
         db_session.close()
 
 
 @app.route('/categorias', methods=['GET'])
 def listar_categorias():
+    # Abre o Banco
     db_session = local_session()
     try:
         # Pega e Mostra todas as Categorias
@@ -337,12 +340,14 @@ def listar_categorias():
     # Caso ocorra algum Erro
     except Exception as e:
         return jsonify({"error": str(e)})
+    # Fecha o Banco
     finally:
         db_session.close()
 
 
 @app.route('/entradas', methods=['GET'])
 def listar_entradas():
+    # Abre o Banco
     db_session = local_session()
     try:
         # Pega e mostra todas as Entradas
@@ -358,12 +363,14 @@ def listar_entradas():
     # Caso ocorra algum Erro
     except Exception as e:
         return jsonify({"error": str(e)})
+    # Fecha o Banco
     finally:
         db_session.close()
 
 
 @app.route('/vendas', methods=['GET'])
 def listar_vendas():
+    # Abre o Banco
     db_session = local_session()
     try:
         # Pega e mostra todas as Vendas
@@ -378,6 +385,7 @@ def listar_vendas():
     # Caso ocorra algum Erro
     except Exception as e:
         return jsonify({"error": str(e)})
+    # Fecha o Banco
     finally:
         db_session.close()
 
