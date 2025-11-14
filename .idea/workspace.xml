@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="Projeto Base">
+      <change afterPath="$PROJECT_DIR$/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Banco.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pessoa.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_pessoa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
     </list>
     <list id="b12d30e6-d3c6-4f10-a7b4-b57492a3cc44" name="Changes by Aluno" comment="" />
     <list id="b5ec9795-366a-41b2-adf9-b4a6b7bf0272" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
+    <list id="cd4cc793-0393-4146-a167-e7222b5ace2c" name="Changes by senai_24_25" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,39 +155,7 @@
       <workItem from="1762452656658" duration="3014000" />
       <workItem from="1762513044978" duration="6346000" />
       <workItem from="1763032213508" duration="7183000" />
-      <workItem from="1763117098567" duration="1594000" />
-    </task>
-    <task id="LOCAL-00013" summary="commit">
-      <option name="closed" value="true" />
-      <created>1749233494536</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1749233494536</updated>
-    </task>
-    <task id="LOCAL-00014" summary="commit">
-      <option name="closed" value="true" />
-      <created>1756404561875</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1756404561875</updated>
-    </task>
-    <task id="LOCAL-00015" summary="commit">
-      <option name="closed" value="true" />
-      <created>1756406102285</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1756406102285</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Changes by senai_24-25">
-      <option name="closed" value="true" />
-      <created>1756406847946</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1756406847946</updated>
+      <workItem from="1763117098567" duration="3412000" />
     </task>
     <task id="LOCAL-00017" summary="commit">
       <option name="closed" value="true" />
@@ -543,7 +517,39 @@
       <option name="project" value="LOCAL" />
       <updated>1763118359494</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Projeto Base">
+      <option name="closed" value="true" />
+      <created>1763118705417</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1763118705417</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Projeto Base">
+      <option name="closed" value="true" />
+      <created>1763118865930</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1763118865930</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Projeto Base">
+      <option name="closed" value="true" />
+      <created>1763118906936</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1763118906936</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Projeto Base">
+      <option name="closed" value="true" />
+      <created>1763118945823</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1763118945823</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,6 +564,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Projeto_final$models.coverage" NAME="models Coverage Results" MODIFIED="1762513461726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projeto_final$app.coverage" NAME="app Coverage Results" MODIFIED="1762515595092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projeto_final$app.coverage" NAME="app Coverage Results" MODIFIED="1763119858246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
