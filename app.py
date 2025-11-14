@@ -14,11 +14,6 @@ def index():
 
 
 # Renderiza a Lista de Pessoas
-# @app.route('/pessoas')
-# def listar_clientes():
-#     return render_template('cadastro_pessoas.html')
-
-# Renderiza a Lista de Pessoas
 @app.route('/pessoas')
 def listar_clientes():
     return render_template('cadastro_pessoas.html')
