@@ -61,4 +61,4 @@ def get_categorias():
             "error": f"{e}",
         }
 
-# print(get_produtos()['produtos'])
+print(get_produtos()['produtos'])

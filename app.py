@@ -33,10 +33,14 @@ def listar_produtos():
 
 
 # Renderiza a Lista de Vendas
-@app.route('/vendas', methods=['GET', 'POST'])
-def listar_vendas():
+@app.route('/vendas')
+def cadastro_vendas():
     return render_template('cadastro_vendas.html')
 
+
+@app.route('/vendas/')
+def listar_venda():
+    return  render_template('cadastro_vendas.html')
 
 
 # Renderiza a Lista de Categoria
