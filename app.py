@@ -115,6 +115,7 @@ def cadastrar_produto():
     # Caso ocorra algum Erro
     except Exception as e:
         return jsonify({"error": str(e)})
+    # Fecha o Banco
     finally:
         db_session.close()
 
@@ -142,6 +143,7 @@ def cadastrar_entrada():
     if not produto:
         return jsonify({"error": "Insumo não encontrado"}), 404
 
+    # Mostra a Data e Horário Cadastrada da Entrada
     data_entrada = str(datetime.now())
 
     # Validações numéricas
@@ -197,6 +199,7 @@ def cadastrar_venda():
         if not all(campo in dados for campo in campos):
             return jsonify({"error": "Campos obrigatórios não informados"}), 400
 
+        # Tabela para Cadastrar Vendas
         forma_pagamento = dados["forma_pagamento"]
         quantidade = dados["quantidade"]
         data_emissao = str(datetime.now())
@@ -239,7 +242,7 @@ def cadastrar_venda():
             # converter de volta para int no retorno
             vendas_registradas.append(venda_dict)
 
-        # Mostra tod0as as Vendas Cadastradas
+        # Mostra todas as Vendas Cadastradas
         return jsonify({
             "success": f"{quantidade} vendas registradas com sucesso",
             "vendas": vendas_registradas
@@ -249,6 +252,7 @@ def cadastrar_venda():
     except Exception as e:
         db_session.rollback()
         return jsonify({"error": str(e)}), 500
+    # Fecha o Banco
     finally:
         db_session.close()
 
@@ -288,6 +292,7 @@ def cadastrar_categoria():
     except Exception as e:
         # Caso ocorra algum Erro
         return jsonify({"error": str(e)})
+    # Fecha o Banco
     finally:
         db_session.close()
 
