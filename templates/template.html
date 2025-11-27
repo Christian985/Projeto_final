@@ -32,7 +32,7 @@
                 <div class="separacao">
                     <a href="{{ url_for('listar_clientes') }}">
                         <strong>
-                            Lista Clientes
+                            Clientes
                         </strong>
                     </a>
                 </div>
@@ -42,7 +42,17 @@
                 <div class="separacao">
                     <a href="{{ url_for('listar_produtos') }}">
                         <strong>
-                            Lista Calçados
+                            Produtos
+                        </strong>
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <div class="separacao">
+                    <a href="{{ url_for('listar_produtos') }}">
+                        <strong>
+                            Categorias
                         </strong>
                     </a>
                 </div>
@@ -52,7 +62,7 @@
                 <div class="separacao">
                     <a href="{{ url_for('listar_pedidos') }}">
                         <strong>
-                            Pedidos
+                            Vendas
                         </strong>
                     </a>
                 </div>
@@ -60,33 +70,14 @@
 
             <li>
                 <div class="separacao">
-                    <a href="{{ url_for('cadastro_pedidos') }}">
+                    <a href="{{ url_for('listar_produtos') }}">
                         <strong>
-                            Cadastro de Pedidos
+                            Entradas
                         </strong>
                     </a>
                 </div>
             </li>
 
-            <li>
-                <div class="separacao">
-                    <a href="{{ url_for('cadastro_clientes') }}">
-                        <strong>
-                            Cadastro de Clientes
-                        </strong>
-                    </a>
-                </div>
-            </li>
-
-            <li>
-                <div class="separacao">
-                    <a href="{{ url_for('cadastro_calcados') }}">
-                        <strong>
-                            Cadastro de calçados
-                        </strong>
-                    </a>
-                </div>
-            </li>
         </ul>
     </aside>
     <main class="main-content">
