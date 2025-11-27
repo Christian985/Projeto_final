@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="inicio aplicação web">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lista_calcados.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_calcados.html" afterDir="false" />
     </list>
     <list id="b5ec9795-366a-41b2-adf9-b4a6b7bf0272" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
-    <list id="fc16301f-775f-4070-8764-743c0f526686" name="Changes by senai_24_25" comment="">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_pedidos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_pedidos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_vendas.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_vendas.html" afterDir="false" />
-    </list>
+    <list id="fc16301f-775f-4070-8764-743c0f526686" name="Changes by senai_24_25" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,49 +60,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.cadastro_calcados.html.executor": "Run",
-    "JavaScript Debug.cadastro_categorias.html.executor": "Run",
-    "JavaScript Debug.cadastro_clientes.html.executor": "Run",
-    "JavaScript Debug.cadastro_pessoas.html.executor": "Run",
-    "JavaScript Debug.cadastro_produtos.html.executor": "Run",
-    "JavaScript Debug.cadastro_vendas.html.executor": "Run",
-    "JavaScript Debug.categoria.html.executor": "Run",
-    "JavaScript Debug.entrada.html.executor": "Run",
-    "JavaScript Debug.hbbh.html.executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.index2.html.executor": "Run",
-    "JavaScript Debug.inicio.html.executor": "Run",
-    "JavaScript Debug.lista_calcados.html.executor": "Run",
-    "JavaScript Debug.lista_clientes.html.executor": "Run",
-    "JavaScript Debug.login.html.executor": "Run",
-    "JavaScript Debug.pedidos.html.executor": "Run",
-    "JavaScript Debug.pessoa.html.executor": "Run",
-    "JavaScript Debug.produtos.html.executor": "Run",
-    "JavaScript Debug.template.html.executor": "Run",
-    "JavaScript Debug.venda.html.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.models.executor": "Run",
-    "Python.routes.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/senai_24_25/PycharmProjects/Projeto_final/static",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.intellij.python.templateLanguages.PyTemplateLanguageModulesConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.cadastro_calcados.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.cadastro_categorias.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.cadastro_clientes.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.cadastro_pessoas.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.cadastro_produtos.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.cadastro_vendas.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.categoria.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.entrada.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.hbbh.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index2.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.inicio.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.lista_calcados.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.lista_clientes.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.login.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.pedidos.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.pessoa.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.produtos.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.template.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.venda.html.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.models.executor&quot;: &quot;Run&quot;,
+    &quot;Python.routes.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/senai_24_25/PycharmProjects/Projeto_final/static&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.python.templateLanguages.PyTemplateLanguageModulesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\senai_24_25\PycharmProjects\Projeto_final\static" />
@@ -161,6 +157,7 @@
       <workItem from="1762513044978" duration="6346000" />
       <workItem from="1763032213508" duration="7183000" />
       <workItem from="1763117098567" duration="23187000" />
+      <workItem from="1764239616388" duration="1298000" />
     </task>
     <task id="LOCAL-00038" summary="Changes by senai_24-25">
       <option name="closed" value="true" />
