@@ -55,14 +55,19 @@ def listar_vendas():
 def listar_categorias():
     return render_template('cadastro_categorias.html')
 
+
+# Renderiza o Cadastro de Pedidos
 @app.route('/pedido', methods=['GET', 'POST'])
 def cadastrar_pedidos():
     return render_template('cadastro_pedidos.html')
 
+
+# Renderiza a Lista de Pedidos
 @app.route('/pedidos')
 def listar_pedidos():
     print('listar_pedidos')
     return render_template('pedidos.html')
+
 
 # Inicia
 if __name__ == '__main__':
