@@ -7,12 +7,14 @@ app.config['JWT_SECRET_KEY'] = "03050710"
 jwt = JWTManager(app)
 
 
+# ==============INÍCIO====================== #
 # Renderiza a Primeira Página/Início
 @app.route('/')
 def index():
     return render_template('template.html')
 
 
+# =============PESSOAS====================== #
 # Renderiza a Lista de Pessoas
 @app.route('/pessoas')
 def listar_clientes():
