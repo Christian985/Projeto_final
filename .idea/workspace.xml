@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="inicio aplicação web">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lista_clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_clientes.html" afterDir="false" />
     </list>
     <list id="b5ec9795-366a-41b2-adf9-b4a6b7bf0272" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
     <list id="b71dac2e-7c81-4830-a629-44dac7ddb0e8" name="Changes by senai_24_25" comment="">
@@ -157,23 +158,7 @@
       <workItem from="1762513044978" duration="6346000" />
       <workItem from="1763032213508" duration="7183000" />
       <workItem from="1763117098567" duration="23187000" />
-      <workItem from="1764239616388" duration="10324000" />
-    </task>
-    <task id="LOCAL-00042" summary="commit">
-      <option name="closed" value="true" />
-      <created>1758803730142</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1758803730142</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Changes by senai_24-25">
-      <option name="closed" value="true" />
-      <created>1758804574192</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1758804574192</updated>
+      <workItem from="1764239616388" duration="11003000" />
     </task>
     <task id="LOCAL-00044" summary="commit">
       <option name="closed" value="true" />
@@ -551,7 +536,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764251034013</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="inicio aplicação web">
+      <option name="closed" value="true" />
+      <created>1764251301434</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1764251301434</updated>
+    </task>
+    <task id="LOCAL-00092" summary="inicio aplicação web">
+      <option name="closed" value="true" />
+      <created>1764251437590</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1764251437590</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

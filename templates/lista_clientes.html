@@ -6,8 +6,14 @@
 <a href="{{ url_for('cadastro_pessoas') }}">Nova Pessoa</a>
 
 <div class="cards-container">
+    {% for item in clientes %}
     <div class="card">
-
+        <p><strong>Cliente:</strong> {{ item.nome_pessoa }}</p>
+        <p><strong>CPF:</strong> {{ item.cpf_pessoa }}</p>
+        <p><strong>Cargo:</strong> {{ item.cargo }}</p>
+        <p><strong>Senha:</strong> {{ item.senha_hash</p>
+        <p><strong>Status:</strong> {{ item.status</p>
     </div>
+    {% endfor %}
 </div>
 {% endblock %}
