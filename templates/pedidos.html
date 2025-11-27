@@ -2,14 +2,18 @@
 
 
 {% block main %}
-<div class="card">padaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-<div class="card">padaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-<div class="card">padaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-<div class="card">padaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-<div class="card">padaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-<div class="card">padaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-<div class="card">padaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-<div class="card">padaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-<div class="card">padaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+
+<a href="{{ url_for('cadastro_pedidos') }}">Novo Pedido</a>
+
+<div class="cards-container">
+    {% for item in pedidos %}
+    <div class="card">
+        <p><strong>Forma de Pagamento:</strong> {{ item.forma_pagamento }}</p>
+        <p><strong>Quantidade:</strong> {{ item.quantidade }}</p>
+        <p><strong>Data de Emissão:</strong> {{ item.data_emissao }}</p>
+        <p><strong>Valor da Venda:</strong> {{ item.valor_venda }}</p>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}
 
