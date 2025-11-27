@@ -1,46 +1,63 @@
 {% extends "template.html" %}
 
 {% block main %}
+<div class="form-container">
+    <form id="postForm" class="form_produto" method="POST" action="/produtos/cadastrar">
+        <h1>Cadastro de Produto</h1>
 
-<div class="main-content">
-    <h2>Cadastro de Calçados</h2>
+        <!-- ID da Categoria -->
+        <div class="form-group">
+            <label for="id_categoria">Categoria:</label>
+            <select id="id_categoria" name="id_categoria" required>
+                <option value="1">Calçados</option>
+                <option value="2">Roupas</option>
+                <option value="3">Acessórios</option>
+            </select>
+        </div>
 
-    <div class="form-container">
-        <form action="submit" method="POST" class="form-cadastro">
-            <div class="form-group">
-                <label for="marca_produto">Marca do Produto:</label>
-                <select id="marca_produto">
-                    <option value="nike">Nike</option>
-                    <option value="adidas">Adidas</option>
-                    <option value="mizuno">Mizuno</option>
-                </select>
-            </div>
+        <!-- Nome do Produto -->
+        <div class="form-group">
+            <label for="nome_produto">Nome do Produto:</label>
+            <input type="text" id="nome_produto" name="nome_produto" required placeholder="Ex: Tênis Air Max">
+        </div>
 
-            <div class="form-group">
-                <label for="tamanho">Tamanho:</label>
-                <input type="number" id="tamanho" min="33" max="50">
-            </div>
+        <!-- Tamanho -->
+        <div class="form-group">
+            <label for="tamanho">Tamanho:</label>
+            <input id="tamanho" name="tamanho" type="number" min="33" max="50" required placeholder="Ex: 42">
+        </div>
 
-            <div class="form-group">
-                <label for="preco">Preço (R$):</label>
-                <input type="number" id="preco" step="0.01" min="0" placeholder="Ex: 199.90">
-            </div>
+        <!-- Gênero -->
+        <div class="form-group">
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Unissex">Unissex</option>
+            </select>
+        </div>
 
-            <div class="form-group">
-                <label for="quantidade">Quantidade em estoque:</label>
-                <input type="number" id="quantidade" min="0">
-            </div>
+        <!-- Marca -->
+        <div class="form-group">
+            <label for="marca_produto">Marca:</label>
+            <select id="marca_produto" name="marca_produto" required>
+                <option value="Nike">Nike</option>
+                <option value="Adidas">Adidas</option>
+                <option value="Mizuno">Mizuno</option>
+            </select>
+        </div>
 
-            <div class="form-group">
-                <label for="descricao">Descrição:</label>
-                <textarea id="descricao" rows="3" placeholder="Detalhes do calçado..."></textarea>
-            </div>
+        <!-- Preço / Custo do Produto -->
+        <div class="form-group">
+            <label for="custo_produto">Preço (R$):</label>
+            <input id="custo_produto" name="custo_produto" type="number" step="0.01" min="0" required placeholder="Ex: 199.90">
+        </div>
 
-            <div class="form-actions">
-                <button type="submit" class="btn-enviar">Cadastrar</button>
-                <button type="reset" class="btn-limpar">Limpar</button>
-            </div>
-        </form>
-    </div>
+
+        <div class="form-actions">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
 </div>
 {% endblock %}

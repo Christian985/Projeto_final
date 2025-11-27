@@ -1,3 +1,4 @@
+from flask import request
 import requests
 
 # ATULIZAR COM O LINK DA API
@@ -29,11 +30,10 @@ def post_login(email, senha):
 #===========================================
 # EXEMPLO DE GET
 #===========================================
-def get_usuarios():
+def get_pessoas():
     try:
-        url = f"{base_url}/usuarios"
-        # response = requests.get(url, headers={"Authorization": f"Bearer {token}"})
-        response = requests.get(url)
+        response = requests.get(f"{base_url}/pessoas")
+        response.raise_for_status()
         return response.json()
     except Exception as e:
         print(e)
@@ -42,8 +42,8 @@ def get_usuarios():
         }
 def get_produtos():
     try:
-        url = f"{base_url}/produtos"
-        response = requests.get(url)
+        response = requests.get(f"{base_url}/produtos/listar")
+        response.raise_for_status()
         return response.json()
     except Exception as e:
         print(e)
@@ -60,5 +60,55 @@ def get_categorias():
         return {
             "error": f"{e}",
         }
+import requests
 
-print(get_produtos()['produtos'])
+base_url = "http://10.135.232.46:5000"
+
+def post_pessoa(form_data):
+    try:
+        # form_data vem do app.py — campos crus do form
+        payload = {
+            "nome_pessoa": form_data.get("nome_pessoa"),
+            "cpf_pessoa": form_data.get("cpf_pessoa"),
+            "cargo": form_data.get("cargo"),
+            "senha": form_data.get("senha"),
+            "status": form_data.get("status"),
+        }
+
+        # Normaliza CPF
+        if payload["cpf_pessoa"]:
+            payload["cpf_pessoa"] = ''.join(filter(str.isdigit, payload["cpf_pessoa"]))
+
+        # Envia JSON para a API (isso faz request.get_json funcionar)
+        response = requests.post(
+            f"{base_url}/pessoas/cadastrar",
+            json=payload
+        )
+
+        return response.json()
+
+    except Exception as e:
+        return {"error": str(e)}
+
+def post_produtos(form_data):
+    try:
+        payload = {
+            "id_categoria": form_data.get("id_categoria"),
+            "nome_produto": form_data.get("nome_produto"),
+            "tamanho": form_data.get("tamanho"),
+            "genero": form_data.get("genero"),
+            "marca_produto": form_data.get("marca_produto"),
+            "custo_produto": form_data.get("custo_produto"),
+            "status": form_data.get("status"),
+        }
+        response = requests.post(
+            f"{base_url}/produtos/cadastrar/api",
+            json=payload
+        )
+        return response.json()
+    except Exception as e:
+        return {"error": str(e)}
+
+
+
+

@@ -2,48 +2,36 @@
 
 {% block main %}
 <div class="form-container">
-    <form action="submit" method="post">
+    <form id="postForm" class="form_pessoa"  method="POST" action="/pessoas/cadastrar">
         <h1>Pessoa</h1>
-
-        <br><br>
 
         <div class="form-group">
             <label for="nome_pessoa">Nome:</label>
-            <textarea id="nome_pessoa" required placeholder="Escreva o Nome"></textarea>
+            <input id="nome_pessoa" name="nome_pessoa" type="text" required placeholder="Escreva o Nome">
         </div>
-
-        <br><br>
 
         <div class="form-group">
             <label for="cpf_pessoa">CPF:</label>
-            <input id="cpf_pessoa" type="number" required placeholder="Escreva o CPF">
+            <input id="cpf_pessoa" name="cpf_pessoa" type="text" required placeholder="Escreva o CPF (11 dígitos)">
         </div>
-
-        <br><br>
 
         <div class="form-group">
             <label for="cargo">Cargo:</label>
-            <input id="cargo" type="text" required placeholder="Escreva o Cargo">
+            <input id="cargo" name="cargo" type="text" required placeholder="Escreva o Cargo">
         </div>
-
-        <br><br>
 
         <div class="form-group">
-            <label for="senha_hash">Senha:</label>
-            <input id="senha_hash" type="password" required placeholder="Escreva a Senha">
+            <label for="senha">Senha:</label>
+            <input id="senha" name="senha" type="password" required placeholder="Escreva a Senha">
         </div>
-
-        <br><br>
 
         <div class="form-group">
             <label for="status">Status:</label>
-            <select id="status">
+            <select id="status" name="status">
                 <option value="Ativo">Ativo</option>
                 <option value="Inativo">Inativo</option>
             </select>
         </div>
-
-        <br><br>
 
         <div class="form-actions">
             <button type="submit">Enviar</button>

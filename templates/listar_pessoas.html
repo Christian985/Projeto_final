@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+
+{% block main %}
+
+<a href="{{ url_for('cadastrar_pessoas') }}">Nova Pessoa</a>
+
+<div class="cards-container">
+
+    {% if clientes %}
+        {% for item in clientes %}
+        <div class="card">
+            <p><strong>Cliente:</strong> {{ item.nome_pessoa }}</p>
+            <p><strong>Cargo:</strong> {{ item.cargo }}</p>
+            <p><strong>Status:</strong> {{ item.status }}</p>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>Não há nenhum usuário cadastrado.</p>
+    {% endif %}
+
+</div>
+
+{% endblock %}

@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, render_template, request, redirect, url_for, flash
 from flask_jwt_extended import create_access_token, jwt_required, JWTManager
 import routes
+from routes import *
 
 app = Flask(__name__)
 app.config['JWT_SECRET_KEY'] = "03050710"
@@ -16,29 +17,79 @@ def index():
 
 # =============PESSOAS====================== #
 # Renderiza a Lista de Pessoas
-@app.route('/pessoas')
+@app.route('/pessoas/listar', methods=['GET'])
 def listar_clientes():
-    return render_template('lista_clientes.html')
+    data = get_pessoas()
+    print(data)
+    if not data or ("msg" in data if isinstance(data, dict) else False):
+        return jsonify({"msg": "Erro ao listar pessoas"}), 500
+
+    return render_template('listar_pessoas.html', clientes=data['pessoas'])
+
 
 
 # Renderiza o Cadastro de Pessoas
-@app.route('/pessoa')
-def cadastrar_clientes():
-    return render_template('cadastro_pessoas.html')
+@app.route('/pessoas/cadastrar', methods=['GET', 'POST'])
+def cadastrar_pessoas():
+    if request.method == 'POST':
+        dados = {
+            "nome_pessoa": request.form.get("nome_pessoa"),
+            "cpf_pessoa": request.form.get("cpf_pessoa"),
+            "cargo": request.form.get("cargo"),
+            "senha": request.form.get("senha"),
+            "status": request.form.get("status"),
+        }
+
+        resultado = post_pessoa(dados)
+
+        if resultado.get("success"):
+            return redirect(url_for('listar_clientes'))
+        else:
+            return f"Erro: {resultado.get('error')}", 400
+
+    return render_template("cadastro_pessoas.html")
+
+
 
 
 # ==============PRODUTOS==================== #
 # Renderiza a Lista de Produtos
-@app.route('/produtos')
+@app.route('/produtos/listar', methods=['GET'])
 def listar_produtos():
-    produtos = routes.get_produtos()
-    return render_template('lista_calcados.html', produtos=produtos['produtos'])
+    data = get_produtos()   # função que chama a API
+
+    if not data or (isinstance(data, dict) and "error" in data):
+        return jsonify({"msg": "Erro ao listar produtos"}), 500
+
+    produtos = data.get('produtos') if isinstance(data, dict) else data
+
+    return render_template('listar_produtos.html', produtos=produtos)
+
+
 
 
 # Renderiza o Cadastro de Produtos
-@app.route('/produto')
+@app.route('/produtos/cadastrar', methods=['GET', 'POST'])
 def cadastrar_produto():
+    if request.method == 'POST':
+        dados = {
+            "id_categoria": request.form.get("id_categoria"),
+            "nome_produto": request.form.get("nome_produto"),
+            "tamanho": request.form.get("tamanho"),
+            "genero": request.form.get("genero"),
+            "marca_produto": request.form.get("marca_produto"),  # ⚠️ corrigido
+            "custo_produto": request.form.get("custo_produto"),
+        }
+
+        resultado = post_produtos(dados)
+
+        if resultado.get("success"):
+            return redirect(url_for('listar_produtos'))
+        else:
+            return f"Erro: {resultado.get('error')}", 400
+
     return render_template('cadastro_produto.html')
+
 
 
 # ===============VENDAS===================== #

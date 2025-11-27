@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="inicio aplicação web" />
-    <list id="6a239002-bb31-4abc-ac21-26488a71a173" name="Changes by Aluno" comment="" />
+    <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="inicio aplicação web">
+      <change afterPath="$PROJECT_DIR$/templates/listar_pessoas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/listar_produtos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_pessoas.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_pessoas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_produto.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_produto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lista_clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_clientes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
+    </list>
     <list id="b5ec9795-366a-41b2-adf9-b4a6b7bf0272" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
     <list id="b71dac2e-7c81-4830-a629-44dac7ddb0e8" name="Changes by senai_24_25" comment="">
       <change beforePath="$PROJECT_DIR$/templates/cadastro_produtos.html" beforeDir="false" />
@@ -19,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -50,6 +59,9 @@
     &quot;accountId&quot;: &quot;acf93378-34c9-4419-b373-18eb8ba97ea5&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -156,15 +168,7 @@
       <workItem from="1762513044978" duration="6346000" />
       <workItem from="1763032213508" duration="7183000" />
       <workItem from="1763117098567" duration="23187000" />
-      <workItem from="1764239616388" duration="12253000" />
-    </task>
-    <task id="LOCAL-00046" summary="commit">
-      <option name="closed" value="true" />
-      <created>1758805979269</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1758805979269</updated>
+      <workItem from="1764239616388" duration="22108000" />
     </task>
     <task id="LOCAL-00047" summary="Changes by senai_24-25">
       <option name="closed" value="true" />
@@ -550,7 +554,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764252606156</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="inicio aplicação web">
+      <option name="closed" value="true" />
+      <created>1764253452663</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1764253452663</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,8 +578,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="inicio aplicação web" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Projeto_final$routes.coverage" NAME="routes Coverage Results" MODIFIED="1764241219854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projeto_final$routes.coverage" NAME="routes Coverage Results" MODIFIED="1764266152681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Projeto_final$models.coverage" NAME="models Coverage Results" MODIFIED="1762513461726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projeto_final$app.coverage" NAME="app Coverage Results" MODIFIED="1764248551087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projeto_final$app.coverage" NAME="app Coverage Results" MODIFIED="1764268948836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

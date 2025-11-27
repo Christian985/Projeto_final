@@ -15,75 +15,25 @@
         </div>
     </div>
 </header>
+
 <div class="container">
+    <!-- MENU LATERAL -->
     <aside class="sidebar">
         <ul>
-            <li>
-                <div class="separacao">
-                    <a href="{{ url_for('index') }}">
-                        <strong>
-                            Menu
-                        </strong>
-                    </a>
-                </div>
-            </li>
-
-            <li>
-                <div class="separacao">
-                    <a href="{{ url_for('listar_clientes') }}">
-                        <strong>
-                            Clientes
-                        </strong>
-                    </a>
-                </div>
-            </li>
-
-            <li>
-                <div class="separacao">
-                    <a href="{{ url_for('listar_produtos') }}">
-                        <strong>
-                            Produtos
-                        </strong>
-                    </a>
-                </div>
-            </li>
-
-            <li>
-                <div class="separacao">
-                    <a href="{{ url_for('listar_produtos') }}">
-                        <strong>
-                            Categorias
-                        </strong>
-                    </a>
-                </div>
-            </li>
-
-            <li>
-                <div class="separacao">
-                    <a href="{{ url_for('listar_pedidos') }}">
-                        <strong>
-                            Vendas
-                        </strong>
-                    </a>
-                </div>
-            </li>
-
-            <li>
-                <div class="separacao">
-                    <a href="{{ url_for('listar_produtos') }}">
-                        <strong>
-                            Entradas
-                        </strong>
-                    </a>
-                </div>
-            </li>
-
+            <li><div class="separacao"><a href="{{ url_for('index') }}"><strong>Menu</strong></a></div></li>
+            <li><div class="separacao"><a href="{{ url_for('listar_clientes') }}"><strong>Clientes</strong></a></div></li>
+            <li><div class="separacao"><a href="{{ url_for('listar_produtos') }}"><strong>Produtos</strong></a></div></li>
+            <li><div class="separacao"><a href="{{ url_for('listar_categorias') }}"><strong>Categorias</strong></a></div></li>
+            <li><div class="separacao"><a href="{{ url_for('listar_vendas') }}"><strong>Vendas</strong></a></div></li>
+            <li><div class="separacao"><a href="{{ url_for('listar_pedidos') }}"><strong>Pedidos</strong></a></div></li>
         </ul>
     </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="main-content">
         {% block main %}
         <div class="intro">
-            <p>SEJAM BEM VINDOS A INDUSTRY GEAR P</p>
+            <p>SEJAM BEM-VINDOS À INDUSTRY GEAR P</p>
         </div>
 
         <br>
@@ -91,9 +41,7 @@
         <div class="imagem_logo_menu">
             <img src="/static/thumbnail_1600w-letras.png" alt="" height="500">
         </div>
-
         {% endblock %}
-
     </main>
 </div>
 </body>

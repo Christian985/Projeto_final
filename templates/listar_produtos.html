@@ -1,0 +1,26 @@
+{% extends "template.html" %}
+
+{% block main %}
+
+<a href="{{ url_for('cadastrar_produto') }}">Novo Produto</a>
+
+<div class="cards-container">
+
+    {% if produtos %}
+        {% for item in produtos %}
+        <div class="card">
+            <p><strong>Marca:</strong> {{ item.marca_produto }}</p>
+            <p><strong>Tamanho:</strong> {{ item.tamanho }}</p>
+            <p><strong>Preço:</strong> R$ {{ "%.2f"|format(item.preco) if item.preco is not none else "0.00" }}</p>
+            <p><strong>Quantidade:</strong> {{ item.quantidade }}</p>
+            <p><strong>Descrição:</strong> {{ item.descricao }}</p>
+            <p><strong>Status:</strong> {{ "Ativo" if item.status else "Inativo" }}</p>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>Não há nenhum produto cadastrado.</p>
+    {% endif %}
+
+</div>
+
+{% endblock %}
