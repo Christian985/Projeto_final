@@ -25,6 +25,7 @@ def cadastrar_clientes():
     return render_template('cadastro_pessoas.html')
 
 
+# ==============PRODUTOS==================== #
 # Renderiza a Lista de Produtos
 @app.route('/produtos')
 def listar_produtos():
@@ -38,24 +39,27 @@ def cadastrar_produto():
     return render_template('cadastro_produto.html')
 
 
-# Renderiza o Cadastro de Vendas
-@app.route('/venda')
-def cadastrar_vendas():
-    return render_template('cadastro_vendas.html')
-
-
+# ===============VENDAS===================== #
 # Renderiza a Lista de Vendas
 @app.route('/vendas')
 def listar_vendas():
     return  render_template('cadastro_vendas.html')
 
 
+# Renderiza o Cadastro de Vendas
+@app.route('/venda')
+def cadastrar_vendas():
+    return render_template('cadastro_vendas.html')
+
+
+# ===============CATEGORIAS================= #
 # Renderiza a Lista de Categoria
 @app.route('/categorias')
 def listar_categorias():
     return render_template('cadastro_categorias.html')
 
 
+# ===============PEDIDOS==================== #
 # Renderiza o Cadastro de Pedidos
 @app.route('/pedido', methods=['GET', 'POST'])
 def cadastrar_pedidos():
@@ -69,6 +73,7 @@ def listar_pedidos():
     return render_template('pedidos.html')
 
 
+# ==============FIM========================= #
 # Inicia
 if __name__ == '__main__':
     app.run(debug=True, port=5002)
