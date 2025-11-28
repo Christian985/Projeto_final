@@ -40,6 +40,7 @@ def get_pessoas():
         return {
             "error": f"{e}",
         }
+
 def get_produtos():
     try:
         response = requests.get(f"{base_url}/produtos/listar")
@@ -50,6 +51,7 @@ def get_produtos():
         return {
             "error": f"{e}",
         }
+
 def get_categorias():
     try:
         url = f"{base_url}/categoria"
@@ -60,6 +62,18 @@ def get_categorias():
         return {
             "error": f"{e}",
         }
+
+def get_vendas():
+    try:
+        url = f"{base_url}/vendas"
+        response = requests.get(url)
+        return response.json()
+    except Exception as e:
+        print(e)
+        return {
+            "error": f"{e}",
+        }
+
 import requests
 
 base_url = "http://10.135.232.46:5000"

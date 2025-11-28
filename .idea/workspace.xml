@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="inicio aplicação web">
-      <change beforePath="$PROJECT_DIR$/templates/listar_produtos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/listar_produtos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes.py" afterDir="false" />
     </list>
     <list id="b5ec9795-366a-41b2-adf9-b4a6b7bf0272" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
     <list id="b71dac2e-7c81-4830-a629-44dac7ddb0e8" name="Changes by senai_24_25" comment="" />
@@ -159,15 +159,7 @@
       <workItem from="1763032213508" duration="7183000" />
       <workItem from="1763117098567" duration="23187000" />
       <workItem from="1764239616388" duration="22108000" />
-      <workItem from="1764327250087" duration="832000" />
-    </task>
-    <task id="LOCAL-00048" summary="Projeto Base">
-      <option name="closed" value="true" />
-      <created>1760720853100</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1760720853100</updated>
+      <workItem from="1764327250087" duration="1163000" />
     </task>
     <task id="LOCAL-00049" summary="Projeto Base">
       <option name="closed" value="true" />
@@ -553,7 +545,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764328060358</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="inicio aplicação web">
+      <option name="closed" value="true" />
+      <created>1764328119114</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1764328119114</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
