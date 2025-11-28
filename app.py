@@ -107,6 +107,14 @@ def listar_vendas():
 # Renderiza o Cadastro de Vendas
 @app.route('/venda')
 def cadastrar_vendas():
+    if request.method == 'POST':
+        dados = {
+            "id_venda": request.form.get("id_venda"),
+            "forma_pagamento": request.form.get("forma_pagamento"),
+            "quantidade": request.form.get("quantidade"),
+            "data_emissao": request.form.get("data_emissao"),
+            "valor_venda": request.form.get("valor_venda"),
+        }
     return render_template('cadastro_vendas.html')
 
 
