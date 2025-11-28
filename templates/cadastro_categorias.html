@@ -2,33 +2,14 @@
 
 {% block main %}
 <div class="form-container">
-    <form action="submit" method="post">
-        <div class="form-group">
-            <label for="id_categoria">ID Categoria:</label>
-            <select id="id_categoria">
-                <option value="categoria_1">Tenis</option>
-                <option value="categoria_2">Sapato</option>
-                <option value="categoria_3">Chinelo</option>
-            </select>
-        </div>
+    <form id="postForm" class="form_categoria" method="POST" action="{{ url_for('cadastro_categoria') }}">
+        <h1>Cadastro de Categoria</h1>
 
         <br><br>
 
         <div class="form-group">
-            <label for="id_produto">Id do produto:</label>
-            <select id="id_produto">
-                <option value="id_produto_1">id_produto_</option>
-                <option value="id_produto_2">id_produto_2</option>
-                <option value="id_produto_3">id_produto_3</option>
-                <option value="id_produto_4">id_produto_4</option>
-            </select>
-        </div>
-
-        <br><br>
-
-        <div class="form-group">
-            <label for="nome_categoria">Descrição</label>
-            <textarea id="nome_categoria" placeholder="Nome da Categoria"></textarea>
+            <label for="nome_categoria">Nome da Categoria:</label>
+            <input id="nome_categoria" name="nome_categoria" type="text">
         </div>
 
         <br><br>

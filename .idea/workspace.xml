@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="inicio aplicação web">
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_pessoas.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_pessoas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_produto.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_produto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cadastro_categorias.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_categorias.html" afterDir="false" />
     </list>
-    <list id="d45be8cc-e34b-4d47-b122-64a3ba9e8722" name="Changes by Aluno" comment="" />
     <list id="b5ec9795-366a-41b2-adf9-b4a6b7bf0272" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,15 +159,7 @@
       <workItem from="1763032213508" duration="7183000" />
       <workItem from="1763117098567" duration="23187000" />
       <workItem from="1764239616388" duration="22108000" />
-      <workItem from="1764327250087" duration="8118000" />
-    </task>
-    <task id="LOCAL-00057" summary="Projeto Base">
-      <option name="closed" value="true" />
-      <created>1763036298622</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1763036298622</updated>
+      <workItem from="1764327250087" duration="9195000" />
     </task>
     <task id="LOCAL-00058" summary="Projeto Base">
       <option name="closed" value="true" />
@@ -554,7 +545,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764336495189</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="inicio aplicação web">
+      <option name="closed" value="true" />
+      <created>1764336836367</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1764336836367</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
