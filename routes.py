@@ -74,9 +74,7 @@ def get_vendas():
             "error": f"{e}",
         }
 
-import requests
 
-base_url = "http://10.135.232.46:5000"
 
 def post_pessoa(form_data):
     try:
