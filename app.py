@@ -75,7 +75,7 @@ def cadastrar_produto():
             "nome_produto": request.form.get("nome_produto"),
             "tamanho": request.form.get("tamanho"),
             "genero": request.form.get("genero"),
-            "marca_produto": request.form.get("marca_produto"),  # ⚠️ corrigido
+            "marca_produto": request.form.get("marca_produto"),
             "custo_produto": request.form.get("custo_produto"),
         }
 
