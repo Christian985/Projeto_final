@@ -2,7 +2,7 @@
 
 {% block main %}
 <div class="form-container">
-    <form id="postForm" class="form_pessoa"  method="POST" action="/pessoas/cadastrar">
+    <form id="postForm" class="form_pessoa"  method="POST" action="{{ url_for('cadastro_pessoas') }}">
         <h1>Cadastro de Pessoa</h1>
 
         <br><br>
