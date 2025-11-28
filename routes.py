@@ -114,7 +114,7 @@ def post_produtos(form_data):
             "status": form_data.get("status"),
         }
         response = requests.post(
-            f"{base_url}/produtos/cadastrar/api",
+            f"{base_url}/produtos/cadastrar",
             json=payload
         )
         return response.json()

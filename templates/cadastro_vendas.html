@@ -2,14 +2,14 @@
 
 {% block main %}
 <div class="form-container">
-    <form id="postForm" class="form_venda" method="POST" action="/vendas/cadastrar">
+    <form id="postForm" class="form_venda" method="POST" action="{{url_for('cadastrar_vendas')}}">
         <h1>Cadastro de Venda</h1>
 
         <br><br>
 
         <div class="form-group">
             <label for="forma_pagamento">Forma de Pagamento:</label>
-            <input id="forma_pagamento" name="forma_pagamento" type="text" required placeholder="Escreva a Forma de Pagamento">
+            <input id="forma_pagamento" name="forma_pagamento"  type="text" required placeholder="Escreva a Forma de Pagamento">
         </div>
 
         <br><br>
@@ -23,22 +23,22 @@
 
         <div class="form-group">
             <label for="data_emissao">Data de Emissão:</label>
-            <input id="data_emissao" type="date">
+            <input name="data_emissao" id="data_emissao" type="date">
         </div>
 
         <br><br>
 
         <div class="form-group">
             <label for="valor_venda">Valor da Venda:</label>
-            <input id="valor_venda" type="number">
+            <input name="valor_venda" id="valor_venda" type="number">
         </div>
 
         <br><br>
 
         <div class="form-actions">
-            <button type="button" class="btn btn-success">Success</button>
+<!--            <button type="button" class="btn btn-success">Success</button>-->
             <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
+<!--            <button type="reset">Limpar</button>-->
         </div>
     </form>
 </div>
