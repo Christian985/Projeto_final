@@ -109,7 +109,6 @@ def listar_vendas():
 def cadastrar_vendas():
     if request.method == 'POST':
         dados = {
-            "id_venda": request.form.get("id_venda"),
             "forma_pagamento": request.form.get("forma_pagamento"),
             "quantidade": request.form.get("quantidade"),
             "data_emissao": request.form.get("data_emissao"),
