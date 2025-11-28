@@ -47,7 +47,7 @@ def cadastrar_pessoas():
         else:
             return f"Erro: {resultado.get('error')}", 400
 
-    return render_template("cadastro_pessoas.html")
+    return render_template("cadastrar_pessoas.html")
 
 
 
@@ -86,7 +86,7 @@ def cadastrar_produto():
         else:
             return f"Erro: {resultado.get('error')}", 400
 
-    return render_template('cadastro_produto.html')
+    return render_template('cadastrar_produto.html')
 
 
 
@@ -114,7 +114,7 @@ def cadastrar_vendas():
             "data_emissao": request.form.get("data_emissao"),
             "valor_venda": request.form.get("valor_venda"),
         }
-    return render_template('cadastro_vendas.html')
+    return render_template('cadastrar_vendas.html')
 
 
 # ===============CATEGORIAS================= #
@@ -135,14 +135,14 @@ def listar_categorias():
 # Renderiza o Cadastro de Entradas
 @app.route('/entrada', methods=['GET', 'POST'])
 def cadastrar_entradas():
-    return render_template('cadastro_entradas.html')
+    return render_template('cadastrar_entradas.html')
 
 
 # Renderiza a Lista de Pedidos
 @app.route('/entradas')
 def listar_pedidos():
     print('listar_entradas')
-    return render_template('entradas.html')
+    return render_template('listar_entradas.html')
 
 
 # ==============FIM========================= #
