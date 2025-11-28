@@ -140,8 +140,7 @@ def cadastrar_entradas():
 
 # Renderiza a Lista de Pedidos
 @app.route('/entradas')
-def listar_pedidos():
-    print('listar_entradas')
+def listar_entradas():
     return render_template('listar_entradas.html')
 
 
