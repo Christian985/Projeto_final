@@ -66,8 +66,6 @@ def listar_produtos():
     return render_template('listar_produtos.html', produtos=produtos)
 
 
-
-
 # Renderiza o Cadastro de Produtos
 @app.route('/produtos/cadastrar', methods=['GET', 'POST'])
 def cadastrar_produto():
@@ -96,7 +94,14 @@ def cadastrar_produto():
 # Renderiza a Lista de Vendas
 @app.route('/vendas')
 def listar_vendas():
-    return  render_template('cadastro_vendas.html')
+    data = get_vendas()    # Função que chama a API
+
+    if not data or (isinstance(data, dict) and "error" in data):
+        return jsonify({"msg": "Erro ao listar vendas"}), 500
+
+    vendas = data.get('vendas') if isinstance(data, dict) else data
+
+    return  render_template('listar_vendas.html')
 
 
 # Renderiza o Cadastro de Vendas

@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67ce0dc7-618b-4e89-ad92-72145c47d4f4" name="Changes" comment="inicio aplicação web">
-      <change afterPath="$PROJECT_DIR$/templates/listar_pessoas.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/listar_produtos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lista_vendas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_pessoas.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_pessoas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_produto.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro_produto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/lista_clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lista_clientes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
     </list>
     <list id="b5ec9795-366a-41b2-adf9-b4a6b7bf0272" name="Changes by senai_24-25" comment="Changes by senai_24-25" />
-    <list id="b71dac2e-7c81-4830-a629-44dac7ddb0e8" name="Changes by senai_24_25" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/cadastro_produtos.html" beforeDir="false" />
-    </list>
+    <list id="b71dac2e-7c81-4830-a629-44dac7ddb0e8" name="Changes by senai_24_25" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,6 +161,7 @@
       <workItem from="1763032213508" duration="7183000" />
       <workItem from="1763117098567" duration="23187000" />
       <workItem from="1764239616388" duration="22108000" />
+      <workItem from="1764327250087" duration="799000" />
     </task>
     <task id="LOCAL-00047" summary="Changes by senai_24-25">
       <option name="closed" value="true" />
