@@ -131,18 +131,18 @@ def listar_categorias():
     return render_template('cadastro_categorias.html')
 
 
-# ===============PEDIDOS==================== #
-# Renderiza o Cadastro de Pedidos
-@app.route('/pedido', methods=['GET', 'POST'])
-def cadastrar_pedidos():
-    return render_template('cadastro_pedidos.html')
+# ===============ENTRADAS==================== #
+# Renderiza o Cadastro de Entradas
+@app.route('/entrada', methods=['GET', 'POST'])
+def cadastrar_entradas():
+    return render_template('cadastro_entradas.html')
 
 
 # Renderiza a Lista de Pedidos
-@app.route('/pedidos')
+@app.route('/entradas')
 def listar_pedidos():
-    print('listar_pedidos')
-    return render_template('pedidos.html')
+    print('listar_entradas')
+    return render_template('entradas.html')
 
 
 # ==============FIM========================= #
