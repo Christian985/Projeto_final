@@ -2,7 +2,7 @@
 
 {% block main %}
 
-<a href="{{ url_for('cadastro_entrada') }}">Nova Venda</a>
+<a href="{{ url_for('cadastrar_entradas') }}">Nova Entrada</a>
 
 <div class="cards-container">
     {% if entradas %}
@@ -15,7 +15,7 @@
         </div>
         {% endfor %}
     {% else %}
-        <p>Não há nenhuma Venda Cadastrada.</p>
+        <p>Não há nenhuma Entrada Cadastrada.</p>
     {% endif %}
 </div>
 

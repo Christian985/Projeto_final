@@ -2,7 +2,8 @@ from flask import request
 import requests
 
 # ATULIZAR COM O LINK DA API
-base_url = "http://10.135.232.46:5000"
+base_url = "http://10.135.232.46:5009"
+
 
 #=======================================================================================================================
 # EXEMPLO DE FUNÇÕES
