@@ -9,12 +9,11 @@
     {% if produtos %}
         {% for item in produtos %}
         <div class="card">
+            <p><strong>Nome:</strong> {{ item.nome_produto }}</p>
             <p><strong>Marca:</strong> {{ item.marca_produto }}</p>
             <p><strong>Tamanho:</strong> {{ item.tamanho }}</p>
             <p><strong>Preço:</strong> R$ {{ "%.2f"|format(item.custo_produto) if item.preco is not none else "0.00" }}</p>
-            <p><strong>Quantidade:</strong> {{ item.quantidade }}</p>
-            <p><strong>Descrição:</strong> {{ item.descricao }}</p>
-            <p><strong>Status:</strong> {{ "Ativo" if item.status else "Inativo" }}</p>
+            <p><strong>Quantidade:</strong> {{ item.qtd_produto }}</p>
         </div>
         {% endfor %}
     {% else %}

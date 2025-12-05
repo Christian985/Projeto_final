@@ -2,21 +2,64 @@
 
 {% block main %}
 
-<a href="{{ url_for('cadastrar_vendas') }}">Nova Venda</a>
+<h2>Gráfico de Estoque – Entradas e Saídas</h2>
 
-<div class="cards-container">
-    {% if vendas %}
-        {% for item in vendas %}
-        <div class="card">
-            <p><strong>Forma de Pagamento:</strong> {{ item.forma_pagamento }}</p>
-            <p><strong>Quantidade:</strong> {{ item.quantidade }}</p>
-            <p><strong>Data de Emissão:</strong> {{ item.data_emissao }}</p>
-            <p><strong>Valor de Venda:</strong> {{ "%.2f"|format(item.valor_venda) if item.valor_venda is not none else "0.00" }}</p>
-        </div>
-        {% endfor %}
-    {% else %}
-        <p>Não há nenhuma Venda Cadastrada.</p>
-    {% endif %}
-</div>
+<canvas id="graficoEstoque" width="400" height="200"></canvas>
+
+<!-- Importação do Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const ctx = document.getElementById("graficoEstoque");
+
+    // Produtos e seus estoques (dados fornecidos)
+    const produtos = [
+        "Sandalia NB Salto Grosso",
+        "Sapato Social Mizuno",
+        "Tênis Adidas Streetalk",
+        "Tênis Nike Downshifter 13",
+        "Chinelo Nike"
+    ];
+
+    const estoque = [200, 193, 147, 120, 232];
+
+    // Entradas imaginárias
+    const entradas = [30, 10, 20, 15, 40];
+
+    // Saídas imaginárias
+    const saidas = [50, 32, 28, 22, 55];
+
+    new Chart(ctx, {
+        type: "bar",
+        data: {
+            labels: produtos,
+            datasets: [
+                {
+                    label: "Estoque Atual",
+                    data: estoque,
+                    backgroundColor: "rgba(54, 162, 235, 0.6)"
+                },
+                {
+                    label: "Entradas",
+                    data: entradas,
+                    backgroundColor: "rgba(75, 192, 192, 0.6)"
+                },
+                {
+                    label: "Saídas",
+                    data: saidas,
+                    backgroundColor: "rgba(255, 99, 132, 0.6)"
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
 
 {% endblock %}

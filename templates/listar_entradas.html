@@ -5,8 +5,10 @@
 <a href="{{ url_for('cadastrar_entradas') }}">Nova Entrada</a>
 
 <div class="cards-container">
+
     {% if entradas %}
         {% for item in entradas %}
+
         <div class="card">
             <p><strong>Nota Fiscal:</strong> {{ item.nota_fiscal }}</p>
             <p><strong>Valor de Entrada:</strong> {{ "%.2f"|format(item.valor_venda) if item.valor_venda is not none else "0.00" }}</p>

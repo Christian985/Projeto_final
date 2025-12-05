@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+
+{% block main %}
+
+<div class="header-actions">
+    <a class="btn-new" href="{{ url_for('cadastrar_categorias') }}">Nova Categoria</a>
+</div>
+
+<div class="cards-container">
+
+    {% if categorias and categorias|length > 0 %}
+        {% for item in categorias %}
+        <div class="card">
+            <p>
+                <strong>ID:</strong> {{ item.id_categoria }}
+            </p>
+            <p>
+                <strong>Nome:</strong> {{ item.nome_categoria }}
+            </p>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>Não há nenhuma categoria cadastrada.</p>
+    {% endif %}
+
+</div>
+
+{% endblock %}
