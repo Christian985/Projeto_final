@@ -20,10 +20,8 @@ def index():
 @app.route('/pessoas/listar', methods=['GET'])
 def listar_clientes():
     data = get_pessoas()
-    # para debug: imprime no servidor (ou use logger)
     print("DEBUG get_pessoas:", data)
 
-    # Se houve erro, registra e mostra mensagem amigável (ou renderiza template com lista vazia)
     error = data.get("error")
     pessoas = data.get("pessoas") if isinstance(data, dict) else []
 
